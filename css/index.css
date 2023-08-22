@@ -1,0 +1,35 @@
+.header_title{
+    background-color: var(--bg-seagull);
+    padding: 5px 0px;
+    max-height: 37px;
+}
+.header_title p{
+    font-size: 11px;
+    font-family: var(--font-family-josefin);
+    letter-spacing: 0.05em;
+    color:var(--white);
+    font-weight: bold;
+    padding: 14px 12px;
+}
+ul li{
+    list-style-type: none;
+    font-family: var(--font-family-josefin);
+    font-weight: bold;
+}
+ul li a{
+    font-size: 13px;
+    letter-spacing: 0.13em;
+    line-height: 1.23;
+    text-decoration: none;
+    color: var(--black);
+}
+.left-nav ul li+li{
+    margin-left: 55px;
+}
+.right-nav ul li+li{
+    margin-left: 80px;
+}
+.logo img{
+     object-fit: cover;
+     max-width: 120px;
+}
