@@ -18,18 +18,24 @@ ul li{
 }
 ul li a{
     font-size: 13px;
+    color: var(--black);
     letter-spacing: 0.13em;
     line-height: 1.23;
     text-decoration: none;
-    color: var(--black);
 }
-.left-nav ul li+li{
-    margin-left: 55px;
+.navbar ul .aero{
+    font-size: 10px;
 }
-.right-nav ul li+li{
-    margin-left: 80px;
+.col-lg-5 ul li span{
+    font-size: 19px;
 }
-.logo img{
-     object-fit: cover;
-     max-width: 120px;
+.mob-header{
+    max-height: 58px;
+}
+.image-width img{
+    height: 45px;
+    width: 45px;
+}
+.mob-icon span{
+    font-size: 21px;
 }
