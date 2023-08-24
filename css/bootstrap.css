@@ -196,6 +196,7 @@ p>a:hover {
   .h1 {
     font-size: 4.375rem;
     line-height: 1.2;
+    color: var(--white);
   }
 
   h2,
@@ -355,8 +356,8 @@ sup {
 }
 
 a {
-  color: #0d6efd;
-  text-decoration: underline;
+  color: var(--black);
+  text-decoration: none;
 }
 
 /* a:hover {
@@ -4070,6 +4071,7 @@ fieldset:disabled .btn {
 
 .dropdown-menu {
   position: absolute;
+  top: 100%;
   z-index: 1000;
   display: none;
   min-width: 10rem;
@@ -8110,6 +8112,11 @@ ul li {
   font-family: var(--font-family-josefin);
   font-weight: bold;
 }
+ul li a{
+  color: var(--black);
+  text-decoration: none;
+
+}
 
 .p-0 {
   padding: 0 !important;
@@ -8504,6 +8511,9 @@ ul li {
 
 .bg-rock-blue {
   background-color: var(--bg-rock-blue);
+}
+.bg-primary-airblue-500{
+  background-color: var(--bg-primary-airblue-500);
 }
 
 /* .bg-input-color{

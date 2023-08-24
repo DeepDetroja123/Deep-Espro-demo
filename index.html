@@ -21,51 +21,142 @@
             <p class="text-center">FREE SHIPPING ON ALL U.S. ORDERS $49+ </p>
         </div>
     </div>
-    <!-- <header class="position-sticky" id="hide-on-desktop">
+    <header class="position-sticky" id="hide-on-desktop">
         <div class="container-fluid">
-            <div class="container mh-66 pt-2 pb-2 border">
+            <div class="container mh-66 pt-2 pb-2">
                 <div class="row align-items-center justify-content-between pt-1">
                     <div class="navbar col-lg-5 d-flex">
                         <ul class="d-flex flex-row justify-content-start align-items-center">
-                            <li class="mx-1"><a href="#">SHOP</a></li>
-                            <span class="icon-esproarrow-icon---Copy aero  me-5"></span>
+                            <li class="mx-1 shop-hover">
+                                <a href="#">SHOP</a>
+                            </li>
+                            <span class="icon-esproarrow-below-fill aero  me-5 "></span>
                             <li class="mx-3"><a href="#">OUR STORY</a></li>
                         </ul>
                     </div>
                     <div class="col-lg d-flex justify-content-around align-items-center">
                         <img src="./images/ESPRO Logo.svg" alt="logo">
                     </div>
-                    <div class="col-lg-5 d-flex flex-row justify-content-end">
+                    <div class="navbar col-lg-5 d-flex flex-row justify-content-end">
                         <ul class="d-flex flex-row justify-content-center align-items-center">
                             <li class=""><a href="#">BREW GUIDES</a></li>
-                            <li class="me-5 ms-5"><a href="#">BLOG</a></li>
+                            <li class="me-4 ms-5"><a href="#">BLOG</a></li>
                             <li class="ms-3"><a href="#"><span class="icon-esprosearch-icon me-3"></span></a></li>
-                            <li class="ms-2"><a href="#"><span class="icon-esproaccount me-3"></span></a></li>
-                            <li class="ms-2"><a href="#"><span class="icon-esprobag me-3"></span></a></li>
+                            <li class="ms-2"><a href="#"><span class="icon-esproaccount-icon me-3"></span></a></li>
+                            <li class="ms-2"><a href="#"><span class="icon-esprobag-icon me-3"></span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </header> -->
+        <div class="container-fluid border" id="megamenu">
+            <div class="container">
+                <div class="row pt-4 justify-content-between ">
+                    <div class="col-10 d-flex px-0 justify-content-between">
+                        <div class="image pt-3 d-flex flex-column  justify-content-start ">
+                            <a href=""><img src="./images/Image 18.png" alt="image-18">
+                            </a>
+                            <div class="image-name pt-5 pb-5">
+                                <a href="#">
+                                    <p>FRENCH PRESS</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image pt-3 mr-10 d-flex flex-column align-items-center">
+                            <a href=""><img src="./images/5012C-BS.png" alt="image-18">
+                            </a>
+                            <div class="image-name pt-5 pb-5">
+                                <a href="#" class="text-right">
+                                    <p>TRAVEL PRESS</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image d-flex flex-column align-items-center pt-1 offset-1">
+                            <a href=""><img src="./images/Image 19.png" alt="image-19">
+                            </a>
+                            <div class="image-name pt-4">
+                                <a href="#">
+                                    <p class="text-center">POUR OVER</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="image-nav d-flex justify-content-end pt-1">
+                            <ul class="px-4 p-0">
+                                <li><a href="#">OTHER COLLECTIONS</a></li>
+                                <li class="pt-1"><a href="#">COLD BREW</a></li>
+                                <li class="pt-1"><a href="#">ESPRESSO</a></li>
+                                <li class="pt-1"><a href="#">TASTING CUPS</a></li>
+                                <li class="pb-4"><a href="#">ACCESSORIES</a></li>
+                                <a href="#" class="btn btn-sm btn-outline-primary btn-pad">SHOP ALL</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <div class="container-fluid" id="hide-on-mobile">
-        <div class="container mob-header border pt-3 pb-4" id="view-toggle-container">
+        <div class="container mob-header pt-3 pb-4" id="view-toggle-container">
             <div class="row d-flex align-items-center flex-nowrap">
                 <div class="col-4 d-flex justify-content-start" onclick="toggleNav()">
-                    <a href="#"><img src="./images/nav.svg" alt="nav"  class="h-100 w-100 d-block " id="menu-icon-mobile"></a>
-                    <img src="./images/close menu icon.svg" class="d-none" id="cancel-icon" alt="close">
+                    <a href="#"><span class="icon-espronav-icon h-100 w-100 d-block"  id="menu-icon-mobile"></span></a>
+                   <a href=""> <span class="icon-esproclose-icon d-none"  id="cancel-icon"></span></a>
                 </div>
                 <div class="col-4 d-flex justify-content-around ">
-                    <a href="#"><img src="./images/ESPRO Logo.svg" alt="nav" ></a>
+                    <a href="#"><img src="./images/ESPRO Logo.svg" alt="nav"></a>
                 </div>
                 <div class="col-4 d-flex justify-content-end mob-icon">
                     <a href="#"><span class="icon-esprosearch-icon mx-3"></span></a>
-                    <a href="#"> <span class="icon-esprobag"></span></a>
+                    <a href="#"> <span class="icon-esprobag-icon"></span></a>
                 </div>
             </div>
         </div>
     </div>
+    <div class="position-relative">
+        <div class="bg-white w-100 pt-4 mobile-nav position-absolute" id="mobile-nav-link">
+            <div class="d-flex flex-column h-100 w-100 mob-main-nav">
+                <ul class="px-4 p-0">
+                    <li class="pt-2"><a href="#">SHOP PRODUCTS</a></li>
+                    <li class="pb-1"><a href="#">FRENCH PRESS</a></li>
+                    <li class="pb-1"><a href="#">POUR OVER</a></li>
+                    <li class="pb-1"><a href="#">TRAVEL PRESS</a></li>
+                    <li class="pb-1"><a href="#">COLD BREW</a></li>
+                    <li class="pb-1"><a href="#">ESPRESSO</a></li>
+                    <li class="pb-1"><a href="#">TASTING CUPS</a></li>
+                    <li class="pb-2"><a href="#">ACCESSORIES</a></li>
+                    <li class="pb-4"><a href="#">SHOP ALL</a></li>
+                </ul>
+            </div>
+            <ul class="pt-2 pb-4 bg-primary-airblue-500 px-4 mob-sub-nav flex-grow-1 h-100">
+                <li class="pb-2 pt-3"><a href="#">LOGIN</a></li>
+                <li class="pb-1"><a href="#">OUR STORY</a></li>
+                <li class="pb-1"><a href="#">BREW GUIDES</a></li>
+                <li class="pb-1"><a href="#">BLOG</a></li>
+                <li class="pb-4"><a href="#">FAQS </a></li>
+            </ul>
+
+        </div>
+    </div>
+
+    <section class="banner">
+        <div class="banner-cont">
+          <div class="wrap-image">
+            <picture>
+              <source media="(min-width: 992px)" srcset="./images/banner_6@2x.png" />
+              <img src="./images/mob-banner_6@2x.png" alt="Header Logo" />
+            </picture>
+            <div class="image-overlay"></div>
+          </div>
+          <div class="wrap-text">
+            <h1>BREW ANYWHERE. BE ANYWHERE.</h1>
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
+            </p>
+            <!-- <a href="#"><button class="btn btn-primary">Shop Now</button></a> -->
+          </div>
+        </div>
+      </section>
 
     <script src="./js/index.js"></script>
 
