@@ -11,11 +11,6 @@
     font-weight: bold;
     padding: 14px 12px;
 }
-ul li{
-    list-style-type: none;
-    font-family: var(--font-family-josefin);
-    font-weight: bold;
-}
 ul li a{
     font-size: 13px;
     color: var(--black);
@@ -32,10 +27,10 @@ ul li a{
 .mob-header{
     max-height: 58px;
 }
-.image-width img{
-    height: 45px;
-    width: 45px;
-}
 .mob-icon span{
     font-size: 21px;
+}
+.mob-icon a{
+    text-decoration: none;
+    color: var(--black);
 }

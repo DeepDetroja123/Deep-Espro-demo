@@ -21,7 +21,7 @@
             <p class="text-center">FREE SHIPPING ON ALL U.S. ORDERS $49+ </p>
         </div>
     </div>
-    <header class="position-sticky">
+    <!-- <header class="position-sticky" id="hide-on-desktop">
         <div class="container-fluid">
             <div class="container mh-66 pt-2 pb-2 border">
                 <div class="row align-items-center justify-content-between pt-1">
@@ -39,32 +39,35 @@
                         <ul class="d-flex flex-row justify-content-center align-items-center">
                             <li class=""><a href="#">BREW GUIDES</a></li>
                             <li class="me-5 ms-5"><a href="#">BLOG</a></li>
-                            <li class="ms-3"><span class="icon-esprosearch-icon me-3"></span></li>
-                            <li class="ms-2"><span class="icon-esproaccount me-3"></span></li>
-                            <li class="ms-2"><span class="icon-esprobag me-3"></span></li>
+                            <li class="ms-3"><a href="#"><span class="icon-esprosearch-icon me-3"></span></a></li>
+                            <li class="ms-2"><a href="#"><span class="icon-esproaccount me-3"></span></a></li>
+                            <li class="ms-2"><a href="#"><span class="icon-esprobag me-3"></span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </header> -->
 
-    <!-- <div class="container-fluid">
-        <div class="container mob-header border">
+    <div class="container-fluid" id="hide-on-mobile">
+        <div class="container mob-header border pt-3 pb-4" id="view-toggle-container">
             <div class="row d-flex align-items-center flex-nowrap">
-                <div class="col-auto d-flex justify-content-start image-width">
-                    <a href="#"><img src="./images/nav.svg" alt="nav" ></a>
+                <div class="col-4 d-flex justify-content-start" onclick="toggleNav()">
+                    <a href="#"><img src="./images/nav.svg" alt="nav"  class="h-100 w-100 d-block " id="menu-icon-mobile"></a>
+                    <img src="./images/close menu icon.svg" class="d-none" id="cancel-icon" alt="close">
                 </div>
-                <div class="col-auto d-flex justify-content-start offset-2 ">
+                <div class="col-4 d-flex justify-content-around ">
                     <a href="#"><img src="./images/ESPRO Logo.svg" alt="nav" ></a>
                 </div>
-                <div class="col-auto d-flex justify-content-start mob-icon">
-                    <span class="icon-esprosearch-icon mx-3"></span>
-                    <span class="icon-esprobag"></span>
+                <div class="col-4 d-flex justify-content-end mob-icon">
+                    <a href="#"><span class="icon-esprosearch-icon mx-3"></span></a>
+                    <a href="#"> <span class="icon-esprobag"></span></a>
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
+
+    <script src="./js/index.js"></script>
 
 </body>
 
