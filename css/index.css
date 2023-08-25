@@ -1,86 +1,100 @@
-.header_title{
+.header_title {
     background-color: var(--bg-seagull);
     padding: 5px 0px;
     max-height: 37px;
 }
-.header_title p{
+
+.header_title p {
     font-size: 11px;
     font-family: var(--font-family-josefin);
     letter-spacing: 0.05em;
-    color:var(--white);
+    color: var(--white);
     font-weight: bold;
     padding: 14px 12px;
 }
-.navbar ul li a{
+
+.navbar ul li a {
     font-size: 13px;
     color: var(--black);
     letter-spacing: 0.13em;
     line-height: 1.23;
     text-decoration: none;
 }
-.navbar ul .aero{
+
+.navbar ul .aero {
     display: inline-block;
     font-size: 10px;
 }
-#megamenu{
+
+#megamenu {
     display: none;
 }
+
 /* .aero:hover #megamenu{
     display: block;
 } */
-.shop-hover:hover .aero{
+.shop-hover:hover .aero {
     transition: 0.4s;
     transform: rotate(180deg);
 }
+
 /* .col-lg-5 ul li span{
     font-size: 19px;
 } */
-.mob-header{
+.mob-header {
     max-height: 58px;
 }
-.mob-icon span{
+
+.mob-icon span {
     font-size: 21px;
 }
-.mob-icon a{
+
+.mob-icon a {
     text-decoration: none;
     color: var(--black);
 }
 
-#hide-on-desktop{
+#hide-on-desktop {
     display: none;
 }
-.mobile-nav{
+
+.mobile-nav {
     left: -100%;
-    top:0;
+    top: 0;
     transition: 0.2s linear;
 }
-.mob-main-nav li:first-child a{
+
+.mob-main-nav li:first-child a {
     font-family: var(--font-family-josefin);
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.1em;
     line-height: 2.57;
 }
-.mob-main-nav li:last-child a{
+
+.mob-main-nav li:last-child a {
     font-family: var(--font-family-josefin);
     font-weight: bold;
     font-size: 14px;
     letter-spacing: 0.1em;
     line-height: 2.57;
 }
-.mob-main-nav ul li a{
+
+.mob-main-nav ul li a {
     font-family: var(--font-family-barlow);
     font-weight: 600;
     font-size: 26px;
     line-height: 1.692;
 }
-.mob-sub-nav li{
+
+.mob-sub-nav li {
     font-family: var(--font-family-josefin);
     font-weight: bold;
     font-size: 15px;
     letter-spacing: 0.1em;
     line-height: 2.94;
 }
+
 .image-name p {
     font-family: var(--font-family-barlow);
     font-weight: 600;
@@ -88,75 +102,69 @@
     line-height: 1.23;
     letter-spacing: 0.01;
 }
-.image{
+
+.image {
     width: 200px;
 }
-.image-nav{
+
+.image-nav {
     width: 321px;
 }
-.image-nav ul li:first-child a{
+
+.image-nav ul li:first-child a {
     font-family: var(--font-family-josefin);
     font-weight: bold;
     font-size: 13px;
     letter-spacing: 0.1em;
     line-height: 2.57;
 }
-.image-nav ul li{
+
+.image-nav ul li {
     font-family: var(--font-family-barlow);
     font-weight: 600;
     font-size: 23px;
     line-height: 1.71;
     letter-spacing: 0.024em;
 }
-.mr-10{
+
+.mr-10 {
     margin-left: 5%;
 }
-.btn-pad{
-    padding: 16px 28px;
-}
+
+
 .banner {
-    position: relative;
     min-height: 43.07vw;
 }
-.banner-cont {
-    max-width: 1440px;
-    margin: 0 auto;
-    min-height: inherit;
-}
-.wrap-image {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.banner-cont>.wrap-image>picture>img {
-    min-height: inherit;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-.wrap-text {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: inherit;
-    align-items: center;
-    text-align: center;
-    color: #ffffff;
-    max-width: 329px;
-    z-index: 1;
-  }
-.wrap-text {
-    max-width: 838px;
-  }
 
-@media (min-width: 992px){
-    #hide-on-desktop{
+.banner .container {
+    max-width: 1440px;
+    min-height: inherit;
+}
+
+.banner-cont>.wrap-image>picture>img {
+    object-fit: cover;
+    aspect-ratio: 2.21;
+}
+
+.wrap-text {
+    z-index: 1;
+    min-height: inherit;
+}
+.image_text p{
+    font-size: 17px;
+    font-family: var(--font-family-nunito);
+    font-weight: normal;
+    color: var(--white);
+    max-width: 811px;
+    line-height: 1.470;
+}
+
+@media (min-width: 992px) {
+    #hide-on-desktop {
         display: block;
     }
-    #hide-on-mobile{
+
+    #hide-on-mobile {
         display: none;
     }
 }
