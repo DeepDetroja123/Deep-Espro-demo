@@ -55,6 +55,9 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
+  --bg-radio-1: #CACCCE;
+  --bg-radio-2: #ffffff;
+  --bg-radio-4: #000000;
   --font-family-barlow: 'Barlow Condensed';
   --font-family-josefin: 'Josefin Sans';
   --font-family-nunito: 'Nunito';
@@ -148,6 +151,7 @@ h1,
 .h1 {
   font-size: 3.4375rem;
   line-height: 1.2;
+  color: var(--white);
 }
 
 h2,
@@ -196,7 +200,6 @@ p>a:hover {
   .h1 {
     font-size: 4.375rem;
     line-height: 1.2;
-    color: var(--white);
   }
 
   h2,
@@ -208,7 +211,7 @@ p>a:hover {
   h3,
   .h3 {
     font-size: 2.5rem;
-    line-height: 1.2;
+    line-height: 1.25;
   }
 
   h4,
@@ -226,7 +229,7 @@ p>a:hover {
   h6,
   .h6 {
     font-size: 0.75rem;
-    line-height: 1.45;
+    line-height:2.083;
   }
 }
 
@@ -2628,7 +2631,7 @@ textarea.form-control-lg {
 .form-check {
   display: block;
   min-height: 1.5rem;
-  padding-left: 1.5em;
+  padding-left: 14px;
   margin-bottom: 0.125rem;
 }
 
@@ -2654,6 +2657,9 @@ textarea.form-control-lg {
   color-adjust: exact;
 }
 
+#customRadio1{
+  background-color:  red;
+}
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
 }
@@ -2665,8 +2671,9 @@ textarea.form-control-lg {
 .form-check-input:active {
   filter: brightness(90%);
 }
+.
 
-.form-check-input:focus {
+/* .form-check-input:focus {
   border-color: #86b7fe;
   outline: 0;
   box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
@@ -2689,7 +2696,7 @@ textarea.form-control-lg {
   background-color: #0d6efd;
   border-color: #0d6efd;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
-}
+} */
 
 .form-check-input:disabled {
   pointer-events: none;
@@ -4011,10 +4018,11 @@ fieldset:disabled .btn {
 
 .btn-sm,
 .btn-group-sm>.btn {
-  font-size: 0.6875em;
+  font-size: 0.75em;
   line-height: 1.18;
   letter-spacing: 0.15em;
-  padding: 16px 19px;
+  /* padding: 22px 21px 18px; */
+  padding: 19px 26px 14px 26px;
 
 }
 
@@ -8513,7 +8521,9 @@ ul li a{
 .bg-ziggurat {
   background-color: var(--bg-ziggurat);
 }
-
+.bg-product{
+  background-color: var(--bg-input-color);
+}
 .bg-rock-blue {
   background-color: var(--bg-rock-blue);
 }

@@ -27,10 +27,10 @@
                 <div class="row align-items-center justify-content-between pt-1">
                     <div class="navbar col-lg-5 d-flex">
                         <ul class="d-flex flex-row justify-content-start align-items-center">
-                            <li class="mx-1 shop-hover">
+                            <li class="mx-1 shop-hover" id="our-story">
                                 <a href="#">SHOP</a>
+                                <span class="icon-esproarrow-below-fill aero me-5"></span>
                             </li>
-                            <span class="icon-esproarrow-below-fill aero  me-5 "></span>
                             <li class="mx-3"><a href="#">OUR STORY</a></li>
                         </ul>
                     </div>
@@ -49,46 +49,52 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid border" id="megamenu">
-            <div class="container">
-                <div class="row pt-4 justify-content-between ">
-                    <div class="col-10 d-flex px-0 justify-content-between">
-                        <div class="image pt-3 d-flex flex-column  justify-content-start ">
-                            <a href=""><img src="./images/Image 18.png" alt="image-18">
-                            </a>
+        <div class="container-fluid border position-absolute start-0 " id="megamenu">
+            <div class="container px-0">
+                <div class="row pb-3 mt-2">
+                    <div class="col-lg-10 pb-4 pt-4 mt-3 d-flex justify-content-between">
+                        <div class="image">
+                            <div class="mx-2">
+                                <a href="#"><img src="./images/Image 18.png" alt="image-18" class="h-100 w-100">
+                                </a>
+                            </div>
                             <div class="image-name pt-5 pb-5">
                                 <a href="#">
                                     <p>FRENCH PRESS</p>
                                 </a>
                             </div>
                         </div>
-                        <div class="image pt-3 mr-10 d-flex flex-column align-items-center">
-                            <a href=""><img src="./images/5012C-BS.png" alt="image-18">
-                            </a>
+                        <div class="image">
+                            <div class="mx-2">
+                                <a href="#"><img src="./images/5012C-BS.png" alt="image-18" class="h-100 w-100">
+                                </a>
+                            </div>
                             <div class="image-name pt-5 pb-5">
                                 <a href="#" class="text-right">
                                     <p>TRAVEL PRESS</p>
                                 </a>
                             </div>
                         </div>
-                        <div class="image d-flex flex-column align-items-center pt-1 offset-1">
-                            <a href=""><img src="./images/Image 19.png" alt="image-19">
-                            </a>
-                            <div class="image-name pt-4">
+                        <div class="image">
+                            <div class="mx-2">
+                                <a href="#"><img src="./images/Image 19.png" alt="image-19" id="bg-image" class="h-100 w-100">
+                                </a>
+                            </div>
+                            <div class="image-name pt-2">
                                 <a href="#">
                                     <p class="text-center">POUR OVER</p>
                                 </a>
                             </div>
                         </div>
-                        <div class="image-nav d-flex justify-content-end pt-1">
-                            <ul class="px-4 p-0">
+                        <div class="image-nav">
+                            <ul class="ps-0 my-0 mt-1">
                                 <li><a href="#">OTHER COLLECTIONS</a></li>
                                 <li class="pt-1"><a href="#">COLD BREW</a></li>
                                 <li class="pt-1"><a href="#">ESPRESSO</a></li>
                                 <li class="pt-1"><a href="#">TASTING CUPS</a></li>
                                 <li class="pb-4"><a href="#">ACCESSORIES</a></li>
-                                <a href="#" class="btn btn-sm btn-outline-primary btn-pad">SHOP ALL</a>
                             </ul>
+                            <a href="#" class="btn btn-sm btn-outline-primary btn-pad">SHOP ALL</a>
                         </div>
                     </div>
                 </div>
@@ -151,7 +157,7 @@
                 class="wrap-text d-flex  position-relative  text-center align-items-center text-lg-left flex-column justify-content-center">
                 <div class="image_text">
                     <h1>BREW ANYWHERE. BE ANYWHERE.</h1>
-                    <p class="px-4">
+                    <p class="px-4 mb-4">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
                     </p>
@@ -159,9 +165,121 @@
                 </div>
             </div>
         </div>
+        <div class="explore-sec d-flex align-items-center justify-content-center position-absolute bottom-0 w-100 pb-4">
+            <p class="text-white fw-bold me-1">EXPLORE</p>
+            <span class="icon-esprobelow-arrow text-white aero mb-1"></span>
+        </div>
     </section>
 
+    <section>
+        <div class="container-fluid">
+            <div class="container align-items-center">
+                <div class="col-12 text-left text-center pt-lg-5  pt-5 pl-0 pr-0 pb-lg-1 pb-2">
+                    <h6>POUR YOUR BEST CUP WITH</h6>
+                   <h3>OUR BEST SELLERS</h3>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-lg-3">
+                        <div class="image-product bg-product py-4 px-4 my-1">
+                            <img src="./images/product-slide-1.png" alt="product-slide" class="w-100 h-100">
+                        </div>
+                        <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                        <p class="price pt-4">$109.95 - $139.95</p>
+                        <div class="px-3 pt-2 d-flex flex-row" id="radio-group">
+                            <div class="form-check">
+                                <input type="radio"  name="customRadio"
+                                    class="form-check-input" id="customRadio1" checked>
+                                <label class="form-check"  for="customRadio1"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="form-check" id="customRadio2" for="customRadio2"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="customRadio"
+                                    c class="form-check-input">
+                                <label class="form-check" id="customRadio3" for="customRadio3"></label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="form-check" id="customRadio4" for="customRadio4"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 position-relative">
+                        <div class="image-product bg-product py-4 px-4 my-1 ">
+                            <span class="badge mb-2">
+                                SALE
+                              </span>
+                            <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100">
+                        </div>
+                        <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                        <p class="price pt-4 ">$89.95 $99.95</p>
+                        <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                    class="form-check-input">
+                                <label class="custom-control-label" for="customRadio3"></label>
+                            </div>
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="custom-control-label" for="customRadio4"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="image-product bg-product py-4 px-4 my-1">
+                            <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100">
+                        </div>
+                        <p class="pt-2 px-3">BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ</p>
+                        <p class="price ">$99.95</p>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="image-product bg-product py-4 px-4 my-1">
+                            <img src="./images/product-slide-4.png" alt="product-slide" class="w-100 h-100">
+                        </div>
+                        <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                        <p class="price pt-2">$44.95</p>
+                        <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                    class="form-check-input">
+                                <label class="custom-control-label" for="customRadio3"></label>
+                            </div>
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="custom-control-label" for="customRadio4"></label>
+                            </div>
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="custom-control-label" for="customRadio4"></label>
+                            </div>
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="custom-control-label" for="customRadio4"></label>
+                            </div>
+                            <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="custom-control-label" for="customRadio4"></label>
+                            </div> <div class="custom-control">
+                                <input type="radio" name="customRadio"
+                                class="form-check-input">
+                                <label class="custom-control-label" for="customRadio4"></label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
 
     <script src="./js/index.js"></script>
 

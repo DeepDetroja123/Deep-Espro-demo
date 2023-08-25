@@ -7,7 +7,7 @@ function toggleNav() {
         hemburgmenu.classList.add('d-none');
         closemenu.classList.remove('d-none');
         closemenu.classList.add('d-block');
-        mobnav.style.left = "0%";
+        mobnav.style.left = "0";
     } else {
         hemburgmenu.classList.remove('d-none');
         hemburgmenu.classList.add('d-block');
@@ -16,6 +16,7 @@ function toggleNav() {
         mobnav.style.left = "-100%";
     }
 }
+
 
 
 
