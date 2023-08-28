@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/bootstrap.css" />
     <link rel="stylesheet" href="./css/index.css" />
     <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/swiper-slide.css">
     <link rel="stylesheet" href="./fonts/style.css" />
     <link rel="shortcut icon" href="./images/Espro Logo.svg" type="image/x-icon" />
 </head>
@@ -27,7 +28,7 @@
                 <div class="row align-items-center justify-content-between pt-1">
                     <div class="navbar col-lg-5 d-flex">
                         <ul class="d-flex flex-row justify-content-start align-items-center">
-                            <li class="mx-1 shop-hover" id="our-story">
+                            <li class="mx-1 shop-hover" id="shop-link">
                                 <a href="#">SHOP</a>
                                 <span class="icon-esproarrow-below-fill aero me-5"></span>
                             </li>
@@ -77,7 +78,8 @@
                         </div>
                         <div class="image">
                             <div class="mx-2">
-                                <a href="#"><img src="./images/Image 19.png" alt="image-19" id="bg-image" class="h-100 w-100">
+                                <a href="#"><img src="./images/Image 19.png" alt="image-19" id="bg-image"
+                                        class="h-100 w-100">
                                 </a>
                             </div>
                             <div class="image-name pt-2">
@@ -174,113 +176,463 @@
     <section>
         <div class="container-fluid">
             <div class="container align-items-center">
-                <div class="col-12 text-left text-center pt-lg-5  pt-5 pl-0 pr-0 pb-lg-1 pb-2">
-                    <h6>POUR YOUR BEST CUP WITH</h6>
-                   <h3>OUR BEST SELLERS</h3>
-                </div>
-                <div class="row pt-4">
-                    <div class="col-lg-3">
-                        <div class="image-product bg-product py-4 px-4 my-1">
-                            <img src="./images/product-slide-1.png" alt="product-slide" class="w-100 h-100">
-                        </div>
-                        <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
-                        <p class="price pt-4">$109.95 - $139.95</p>
-                        <div class="px-3 pt-2 d-flex flex-row" id="radio-group">
-                            <div class="form-check">
-                                <input type="radio"  name="customRadio"
-                                    class="form-check-input" id="customRadio1" checked>
-                                <label class="form-check"  for="customRadio1"></label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="form-check" id="customRadio2" for="customRadio2"></label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="customRadio"
-                                    c class="form-check-input">
-                                <label class="form-check" id="customRadio3" for="customRadio3"></label>
-                            </div>
-                            <div class="form-check">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="form-check" id="customRadio4" for="customRadio4"></label>
-                            </div>
-                        </div>
+                <div class="col-12" style="overflow: hidden;">
+                    <div class="col-12 text-left text-center pt-lg-5 pt-5 pl-0 pr-0 pb-lg-1 pb-2">
+                        <h6 class="pt-3">POUR YOUR BEST CUP WITH</h6>
+                        <h3 class="pt-1">OUR BEST SELLERS</h3>
                     </div>
-                    <div class="col-lg-3 position-relative">
-                        <div class="image-product bg-product py-4 px-4 my-1 ">
-                            <span class="badge mb-2">
-                                SALE
-                              </span>
-                            <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100">
-                        </div>
-                        <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
-                        <p class="price pt-4 ">$89.95 $99.95</p>
-                        <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                    class="form-check-input">
-                                <label class="custom-control-label" for="customRadio3"></label>
+                    <div class="swiper mySwiper pt-1">
+                        <div class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-9 col-md-6 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="image-product bg-product py-4 px-4 my-1">
+                                        <img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <div class="text-overlay">
+                                        <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                                        <p class="price pt-4">$109.95 - $139.95</p>
+                                    </div>
+                                    <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group">
+                                        <div class="form-check">
+                                            <a href="#"> <input type="radio" name="customRadio" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="form-check" for="customRadio1"></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <a href=""><input type="radio" name="customRadio"
+                                                    class="form-check-input" />
+                                                <label class="form-check" id="customRadio2"
+                                                    for="customRadio2"></label></a>
+                                        </div>
+                                        <div class="form-check">
+                                            <a href=""><input type="radio" name="customRadio" id="customRadio1"
+                                                    class="form-check-input" /></a>
+                                            <label class="form-check" id="customRadio3" for="customRadio3"></label>
+                                        </div>
+                                        <div class="form-check">
+                                            <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="form-check" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="custom-control-label" for="customRadio4"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="image-product bg-product py-4 px-4 my-1">
-                            <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100">
-                        </div>
-                        <p class="pt-2 px-3">BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ</p>
-                        <p class="price ">$99.95</p>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="image-product bg-product py-4 px-4 my-1">
-                            <img src="./images/product-slide-4.png" alt="product-slide" class="w-100 h-100">
-                        </div>
-                        <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
-                        <p class="price pt-2">$44.95</p>
-                        <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                    class="form-check-input">
-                                <label class="custom-control-label" for="customRadio3"></label>
-                            </div>
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="custom-control-label" for="customRadio4"></label>
-                            </div>
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="custom-control-label" for="customRadio4"></label>
-                            </div>
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="custom-control-label" for="customRadio4"></label>
-                            </div>
-                            <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="custom-control-label" for="customRadio4"></label>
-                            </div> <div class="custom-control">
-                                <input type="radio" name="customRadio"
-                                class="form-check-input">
-                                <label class="custom-control-label" for="customRadio4"></label>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="image-product bg-product py-4 px-4 my-1">
+                                        <span class="badge mb-2 position-absolute"> SALE </span>
+                                        <img src="./images/product-slide-2.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
 
+                                    <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                    <p class="price pt-4">$89.95 $99.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                    id="customRadio4" checked /></a>
+                                            <label class="form-check" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                    id="customRadio1" /></a>
+                                            <label class="form-check" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="image-product bg-product py-4 px-4 my-1">
+                                        <span class="badge bg-badge-naviblue position-absolute">
+                                            NEW!
+                                        </span>
+                                        <img src="./images/product-slide-3.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3">
+                                        BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ
+                                    </p>
+                                    <p class="price">$99.95</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="bg-product py-4 px-4 my-1 image-badge">
+                                        <span class="badge bg-badge-lightblue position-absolute">
+                                            BACK IN STOCK
+                                        </span>
+                                        <img src="./images/product-slide-4.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                    <p class="price pt-2">$44.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" />
+                                                <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="bg-product py-4 px-4 my-1 image-badge">
+                                        <span class="badge bg-badge-lightblue position-absolute">
+                                            BACK IN STOCK
+                                        </span>
+                                        <img src="./images/product-slide-4.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                    <p class="price pt-2">$44.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" />
+                                                <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="bg-product py-4 px-4 my-1 image-badge">
+                                        <span class="badge bg-badge-lightblue position-absolute">
+                                            BACK IN STOCK
+                                        </span>
+                                        <img src="./images/product-slide-4.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                    <p class="price pt-2">$44.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" />
+                                                <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="bg-product py-4 px-4 my-1 image-badge">
+                                        <span class="badge bg-badge-lightblue position-absolute">
+                                            BACK IN STOCK
+                                        </span>
+                                        <img src="./images/product-slide-4.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                    <p class="price pt-2">$44.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" />
+                                                <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="bg-product py-4 px-4 my-1 image-badge">
+                                        <span class="badge bg-badge-lightblue position-absolute">
+                                            BACK IN STOCK
+                                        </span>
+                                        <img src="./images/product-slide-4.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                    <p class="price pt-2">$44.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" />
+                                                <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide col-9 col-md-6 col-lg-3 col-lg-3 position-relative">
+                                <div class="product-slide">
+                                    <div class="bg-product py-4 px-4 my-1 image-badge">
+                                        <span class="badge bg-badge-lightblue position-absolute">
+                                            BACK IN STOCK
+                                        </span>
+                                        <img src="./images/product-slide-4.png" alt="product-slide"
+                                            class="w-100 h-100" />
+                                    </div>
+                                    <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                    <p class="price pt-2">$44.95</p>
+                                    <div class="px-3 pt-2 d-flex flex-row" id="radio-group-1">
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio1" checked /></a>
+                                            <label class="custom-control-label" for="customRadio3"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" />
+                                                <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4"
+                                                    class="form-check-input" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                        <div class="custom-control">
+                                            <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                    id="customRadio4" /></a>
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shadow">
+                    <div class="swiper-button-n"><a href="#"
+                            class="px-2 py-2 position-absolute d-flex align-items-center justify-content-center right bg-white"><svg
+                                version="1.1" id="Layer_1" hight="12.22px" width="15px" fill="#00000"
+                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="16px"
+                                y="0px" viewBox="0 0 15 15" style="enable-background:new 0 0 15 15;"
+                                xml:space="preserve">
+                                <path transform="translate(-10.75 -8.045)" d="M20.4,21.7c-0.1,0-0.2,0-0.3-0.1c-0.2-0.2-0.2-0.5-0.1-0.7l4.2-4.9
+        H11.3c-0.3,0-0.5-0.2-0.5-0.5S11,15,11.3,15h12.9L20,10.2C19.8,10,19.8,9.6,20,9.5c0.2-0.2,0.5-0.2,0.7,0.1l4.9,5.7
+        c0.1,0.1,0.1,0.2,0.1,0.3l0,0c0,0,0,0,0,0c0,0,0,0,0,0v0c0,0,0,0,0,0l0,0c0,0,0,0,0,0c0,0,0,0,0,0c0,0,0,0,0,0l0,0
+            c0,0.1,0,0.2-0.1,0.3l-4.9,5.7C20.6,21.7,20.5,21.7,20.4,21.7z" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section>
+        <div class="container pt-5 ">
+            <div class="row">
+                <div class="col">
+                    <div class="col-6 d-flex flex-wrap blog-sec image-overlay position-relative">
+                        <div class="image-sec-1">
+                            <a href="#"> <img src="./images/explore-img-1.png" alt="coffee-img"></a>
+                        </div>
+                    </div>
+                    <div class="image-sec-2 offset-1 pt-5">
+                        <a href="#"> <img src="./images/explore-img-2.png" alt="coffee-img" class="pt-5"></a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="blog-text">
+                        <h6>DESIGNED FOR REAL LIFE</h6>
+                        <h2>COFFEE MADE FOR YOUR LIFE ON THE GO.</h2>
+                        <p class="pt-1">We understand coffee is a big part of your busy, active life. That's why we
+                            create and develop products that allow you to bring your passion for <span>coffee-when you
+                                want it-</span> and wherever life takes you.</p>
+                    </div>
+                    <div class="image-sec-3 pt-5">
+                        <img src="./images/explore-img-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="container">
+        <div class="explore-sec">
+            <div class="col-12 text-left text-center pt-lg-5 pt-5 pl-0 pr-0 pb-lg-1 pb-2">
+                <h3>EXPLORE OUR PRODUCTS</h3>
+            </div>
+            <div class="row d-flex flex-wrap  pt-4">
+                <div class="col-12 col-lg-4 images position-relative">
+                    <h5 class="position-absolute offset-1 text-white">FRENCH PRESS</h5>
+                    <a href="#" class="position-absolute btn btn-light-sm d-none">SHOP NOW</a>
+                    <img src="./images/1232C_7.png" alt="" class="img-sec w-100 h-100">
+                    <img src="./images/Mask Group 8.png" alt="" class="w-100 h-100 d-none">
+                </div>
+                <div class="col-12 col-lg-4 images image-2 img-color position-relative">
+                    <h5 class="position-absolute offset-1 text-white">POUR OVER</h5>
+                    <a href="#" class="position-absolute btn btn-light-sm d-none">SHOP NOW</a>
+                    <img src="./images/7018-BS-GR_7@2x.png" alt="" class="img-sec w-100 h-100">
+                    <img src="./images/Mask Group 6@2x.png" alt="" class="d-none w-100 h-100">
+                </div>
+                <div class="col-12 col-lg-4 images image-2 img-colors position-relative">
+                    <h5 class="position-absolute offset-1 text-white">COLD BREW</h5>
+                    <a href="#" class="position-absolute btn btn-light-sm d-none">SHOP NOW</a>
+                    <img src="./images/Image 14@2x.png" alt="" class="img-sec w-100 h-100">
+                    <img src="./images/Mask Group 7@2x.png" alt="" class="w-100 h-100 d-none">
+                </div>
+            </div>
+            <div class="col-12 text-center pt-lg-5 pt-5">
+                <a href="#" class="btn btn-light btn-pad">SHOP ALL PRODUCTS</a>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="container-fluid pt-5">
+            <div class="row pt-5">
+                <div class="col-6  position-relative d-flex text-center align-items-center">
+                    <img src="./images/mask-1.png" alt="mask">
+                    <div class="pt-5 image-text position-absolute text-center text-white">
+                        <h2 class="text-white">MAKE EVERY CUP AN EXPERIENCE.</h2>
+                        <p class="pb-5">Have your French pressed coffee anywhere with ESPRO’s Travel Press. A double micro-filter eliminates grit for your smoothest cup on the go, and the mug fits right in a car cup holder or bike's water bottle cage.</p>
+                        <a href="#" class="btn btn-light btn-pad">SHOP TRAVEL PRESS</a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="./images/mask-2.png" alt="mask">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/index.js"></script>
 
 </body>

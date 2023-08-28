@@ -162,7 +162,7 @@ h2,
 
 h3,
 .h3 {
-  font-size: 1.875rem;
+  font-size: 2.25rem;
   line-height: 1.2;
 }
 
@@ -2641,8 +2641,8 @@ textarea.form-control-lg {
 }
 
 .form-check-input {
-  width: 1em;
-  height: 1em;
+  width: 22px;
+  height: 22px;
   margin-top: 0.25em;
   vertical-align: top;
   background-color: #fff;
@@ -2658,7 +2658,10 @@ textarea.form-control-lg {
 }
 
 #customRadio1{
-  background-color:  red;
+  background-color: var(--bg-radio-1);
+}
+#customRadio4{
+  background-color:  var(--black);
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -2671,33 +2674,10 @@ textarea.form-control-lg {
 .form-check-input:active {
   filter: brightness(90%);
 }
-.
-
-/* .form-check-input:focus {
-  border-color: #86b7fe;
-  outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
-}
-
-.form-check-input:checked {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-}
-
-.form-check-input:checked[type=checkbox] {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
-}
-
 .form-check-input:checked[type=radio] {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23fff'/%3e%3c/svg%3e");
+  outline: 1px solid #221F20;
+  outline-offset: 2px;
 }
-
-.form-check-input[type=checkbox]:indeterminate {
-  background-color: #0d6efd;
-  border-color: #0d6efd;
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
-} */
-
 .form-check-input:disabled {
   pointer-events: none;
   filter: none;
@@ -3882,12 +3862,15 @@ fieldset:disabled .btn {
 }
 
 .btn-light {
-  padding: 17px 41px 13px 41px;
+  padding: 21px 37px 17px 35px;
+}
+.btn-pad{
+  padding: 25px 22px 22px 25px;
 }
 
 .btn-light-sm {
   padding: 18px 33px 12px 33px;
-  background-color: white;
+  /* background-color: white; */
   border: none;
   opacity: 0.70;
 }
@@ -8530,6 +8513,10 @@ ul li a{
 .bg-primary-airblue-500{
   background-color: var(--bg-primary-airblue-500);
 }
+.bg-span-lightblue{
+  background-color: var(--bg-span-lightblue);
+}
+
 
 /* .bg-input-color{
   background-color: var(--bg-input-color);

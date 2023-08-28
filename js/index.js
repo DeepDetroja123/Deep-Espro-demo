@@ -20,6 +20,60 @@ function toggleNav() {
 
 
 
+  var swiper = new Swiper('.mySwiper', {
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-n',
+      prevEl: '.swiper-button-p',
+    },
+    slidesPerView: 1.2,
+    slidesOffsetBefore: 15,
+    breakpoints: {
+      576: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+      },
+      768: {
+          slidesPerView: 2,
+          slidesOffsetBefore: 0,
+      },
+      992: {
+          spaceBetween:30,
+          slidesPerView: 3,
+          slidesOffsetBefore: 0,
+      },
+      1200: {
+          spaceBetween:30,
+          slidesPerView: 4,
+          slidesOffsetBefore: 0,
+      }
+  }
+
+
+
+  });
+
+  const shopLink = document.getElementById("shop-link");
+  const megaMenu = document.getElementById("megamenu");
+  
+  shopLink.addEventListener("mouseover", () => {
+      megaMenu.style.display = "block";
+    });
+  
+    megaMenu.addEventListener("mouseover", () => {
+      megaMenu.style.display = "block"; 
+    });
+  
+    shopLink.addEventListener("mouseout", () => {
+      megaMenu.style.display = "none"; 
+    });
+  
+    megaMenu.addEventListener("mouseout", () => {
+      megaMenu.style.display = "none"; 
+    });
+
+
+
 
 
 
