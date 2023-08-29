@@ -58,6 +58,10 @@
   --bg-radio-1: #CACCCE;
   --bg-radio-2: #ffffff;
   --bg-radio-4: #000000;
+  --h1-color: #AACBD8;
+  --span-color: #D8E6EB; 
+  --image-bg-color: #EFF5F7;
+  --right-overlay-color: #84AEC1;
   --font-family-barlow: 'Barlow Condensed';
   --font-family-josefin: 'Josefin Sans';
   --font-family-nunito: 'Nunito';
@@ -3862,7 +3866,14 @@ fieldset:disabled .btn {
 }
 
 .btn-light {
+  color: #000;
+  background-color: transparent;
   padding: 21px 37px 17px 35px;
+}
+.btn-light::before{
+  border: 1px solid var(--bs-white) !important;
+  background-color: var(--white);
+  transform: scale(0.935,0.94) !important;
 }
 .btn-pad{
   padding: 25px 22px 22px 25px;
@@ -8393,6 +8404,9 @@ ul li a{
 .text-lowercase {
   text-transform: lowercase !important;
 }
+.text-left{
+  text-align: left;
+}
 
 .text-uppercase {
   text-transform: uppercase !important;
@@ -8516,7 +8530,18 @@ ul li a{
 .bg-span-lightblue{
   background-color: var(--bg-span-lightblue);
 }
-
+.h1-color{
+  color: var(--h1-color);
+}
+.span-color{
+  color: var(--span-color);
+}
+.image-bg-color{
+  background-color: var(--image-bg-color);
+}
+.right-overlay-color{
+  background-color: var(--right-overlay-color);
+}
 
 /* .bg-input-color{
   background-color: var(--bg-input-color);

@@ -49,8 +49,6 @@ function toggleNav() {
       }
   }
 
-
-
   });
 
   const shopLink = document.getElementById("shop-link");
@@ -71,6 +69,23 @@ function toggleNav() {
     megaMenu.addEventListener("mouseout", () => {
       megaMenu.style.display = "none"; 
     });
+
+
+
+    var swiper = new Swiper(".ImageSwiper", {
+      slidesPerView: 5.65,
+      spaceBetween: 30,
+      loop: true,
+      navigation: {
+          nextEl: '.swiper-button-n',
+          prevEl: '.swiper-button-p',
+      },
+      breakpoints: {
+          1200: {
+              slidesPerView: 4.75,
+          },
+      },
+  });
 
 
 
