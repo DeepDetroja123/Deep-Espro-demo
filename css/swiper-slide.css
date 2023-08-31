@@ -308,7 +308,7 @@
   display: none;
 }
 /* Navigation font start */
-.swiper-button-prev:after,
+/* .swiper-button-prev:after,
 .swiper-button-next:after {
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
@@ -320,7 +320,7 @@
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   content: 'prev';
-}
+} */
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
   right: var(--swiper-navigation-sides-offset, 10px);

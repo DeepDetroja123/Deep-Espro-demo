@@ -21,33 +21,33 @@ function toggleNav() {
 
 
   var swiper = new Swiper('.mySwiper', {
-    loop: true,
     navigation: {
-      nextEl: '.swiper-button-n',
-      prevEl: '.swiper-button-p',
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
-    slidesPerView: 1.2,
-    slidesOffsetBefore: 15,
+    slidesPerView: 'auto',
+    spaceBetween:12,
+    slidesOffsetBefore: 30,
     breakpoints: {
-      576: {
-          slidesPerView: 2,
-          slidesOffsetBefore: 0,
-      },
-      768: {
-          slidesPerView: 2,
-          slidesOffsetBefore: 0,
-      },
-      992: {
-          spaceBetween:30,
-          slidesPerView: 3,
-          slidesOffsetBefore: 0,
-      },
-      1200: {
-          spaceBetween:30,
-          slidesPerView: 4,
-          slidesOffsetBefore: 0,
-      }
-  }
+        576: {
+            slidesOffsetBefore: 0,
+            slidesPerView: 2,
+        },
+        768: {
+            slidesOffsetBefore: 0,
+            slidesPerView: 2,
+        },
+        992: {
+            slidesOffsetBefore: 0,
+            spaceBetween: 30,
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesOffsetBefore: 0,
+            spaceBetween: 30,
+            slidesPerView: 4
+        },
+    },
 
   });
 
@@ -72,21 +72,32 @@ function toggleNav() {
 
 
 
-    var swiper = new Swiper(".ImageSwiper", {
-      slidesPerView: 5.65,
-      spaceBetween: 30,
-      loop: true,
-      navigation: {
-          nextEl: '.swiper-button-n',
-          prevEl: '.swiper-button-p',
-      },
-      breakpoints: {
-          1200: {
-              slidesPerView: 4.75,
-          },
-      },
-  });
-
+var swiper1 = new Swiper(".ImageSwiper", {
+            slidesPerView: "auto",
+            spaceBetween: 30,
+            loop:true,
+            grid: {
+                rows: 2,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                1200: {
+                    centeredSlides: false,
+                    slidesPerView: 4.70,
+                    grid: {
+                        rows: 1,
+                    },
+                },
+                992:{
+                    grid: {
+                        rows: 1,
+                    },
+                }
+            },
+        });
 
 
 
