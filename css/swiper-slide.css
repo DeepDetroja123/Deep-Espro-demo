@@ -412,8 +412,9 @@
   opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.2);
 }
 .swiper-pagination-bullet{
-  width:30px !important;
-  height: 2px !important;
+  width:12px !important;
+  height: 12px !important;
+  border-radius: 50%;
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -432,7 +433,7 @@ button.swiper-pagination-bullet {
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   /* background: var(--swiper-pagination-color, var(--swiper-theme-color)); */
-  background-color:#D29C7D ;
+  background-color: var(--bg-span-lightblue) ;
 }
 .swiper-vertical > .swiper-pagination-bullets,
 .swiper-pagination-vertical.swiper-pagination-bullets {

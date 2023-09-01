@@ -141,7 +141,7 @@ p {
   margin-bottom: 0;
   /* margin-bottom: 1rem; */
   font-family: var(--font-family-nunito);
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 16px;
   line-height: 1.56;
 }
@@ -186,6 +186,7 @@ h6,
 .h6 {
   font-size: 0.75rem;
   line-height: 1.45;
+  letter-spacing: 0.1em;
 }
 
 p>a {
@@ -2954,6 +2955,9 @@ textarea.form-control-lg {
   z-index: 3;
 }
 
+header{
+  z-index: 5;
+}
 .input-group .btn {
   position: relative;
   z-index: 2;
@@ -3896,7 +3900,7 @@ fieldset:disabled .btn {
 
 .btn-light:hover {
   color: #000;
-  background-color: #f9fafb;
+  background-color: transparent;
   border-color: #f9fafb;
 }
 
@@ -8524,6 +8528,9 @@ ul li a{
 
 .bg-dark-cyan {
   background-color: var(--bg-dark-cyan);
+}
+.bg-primary-airblue{
+  background-color: var(--bg-primary-airblue);
 }
 
 .bg-ziggurat {

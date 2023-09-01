@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./css/swiper-slide.css">
     <link rel="stylesheet" href="./fonts/style.css" />
     <link rel="shortcut icon" href="./images/Espro Logo.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +23,7 @@
             <p class="text-center">FREE SHIPPING ON ALL U.S. ORDERS $49+ </p>
         </div>
     </div>
-    <header class="position-sticky" id="hide-on-desktop">
+    <header class="position-sticky top-0 bg-white" id="hide-on-desktop">
         <div class="container-fluid">
             <div class="container mh-66 pt-2 pb-2">
                 <div class="row align-items-center justify-content-between pt-1">
@@ -39,21 +40,21 @@
                         <img src="./images/ESPRO Logo.svg" alt="logo">
                     </div>
                     <div class="navbar col-lg-5 d-flex flex-row justify-content-end">
-                        <ul class="d-flex flex-row justify-content-center align-items-center">
+                        <ul class="d-flex flex-row justify-content-center align-items-center order">
                             <li class=""><a href="#">BREW GUIDES</a></li>
                             <li class="me-4 ms-5"><a href="#">BLOG</a></li>
                             <li class="ms-3"><a href="#"><span class="icon-esprosearch-icon me-3"></span></a></li>
                             <li class="ms-2"><a href="#"><span class="icon-esproaccount-icon me-3"></span></a></li>
                             <li class="ms-2"><a href="#"><span class="icon-esprobag-icon me-3"></span></a></li>
                             <li><span
-                                    class="save-order d-flex justify-content-center align-items-center bg-seagull rounded-circle">0</span>
+                                    class="show-num d-flex justify-content-center align-items-center bg-primary-airblue rounded-circle">0</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container-fluid border position-absolute start-0 " id="megamenu">
+        <div class="container-fluid  position-absolute start-0 " id="megamenu">
             <div class="container px-0">
                 <div class="row pb-3 mt-2">
                     <div class="col-lg-10 pb-4 pt-4 mt-3 d-flex justify-content-between">
@@ -111,7 +112,7 @@
         <div class="container mob-header pt-3 pb-4" id="view-toggle-container">
             <div class="row d-flex align-items-center flex-nowrap">
                 <div class="col-4 d-flex justify-content-start" onclick="toggleNav()">
-                    <a href="#"><span class="icon-espronav-icon h-100 w-100 d-block" id="menu-icon-mobile"></span></a>
+                    <a href="#"><span class="icon-espronav-icon  d-block" id="menu-icon-mobile"></span></a>
                     <a href=""> <span class="icon-esproclose-icon h-100 w-100 d-none" id="cancel-icon"></span></a>
 
 
@@ -119,11 +120,11 @@
                 <div class="col-4 d-flex justify-content-around ">
                     <a href="#"><img src="./images/ESPRO Logo.svg" alt="nav"></a>
                 </div>
-                <div class="col-4 d-flex justify-content-end mob-icon">
+                <div class="col-4 d-flex justify-content-end mob-icon order">
                     <a href="#"><span class="icon-esprosearch-icon mx-3"></span></a>
                     <a href="#"> <span class="icon-esprobag-icon"></span></a>
                     <span
-                        class="ms-1 save-order d-flex justify-content-center align-items-center bg-seagull rounded-circle">0</span>
+                        class="ms-1 show-num d-flex justify-content-center align-items-center bg-seagull rounded-circle">0</span>
                 </div>
             </div>
         </div>
@@ -142,14 +143,15 @@
                     <li class="pb-2"><a href="#">ACCESSORIES</a></li>
                     <li class="pb-4"><a href="#">SHOP ALL</a></li>
                 </ul>
-
-                <ul class="pt-2 pb-4 bg-primary-airblue-500 px-4 mob-sub-nav flex-grow-1 h-100">
-                    <li class="pb-2 pt-3"><a href="#">LOGIN</a></li>
-                    <li class="pb-1"><a href="#">OUR STORY</a></li>
-                    <li class="pb-1"><a href="#">BREW GUIDES</a></li>
-                    <li class="pb-1"><a href="#">BLOG</a></li>
-                    <li class="pb-4"><a href="#">FAQS </a></li>
-                </ul>
+                <div class="mob-sub-nav">
+                    <ul class="pt-2 pb-4 bg-primary-airblue-500 px-4  flex-grow-1 h-100">
+                        <li class="pb-2 pt-3"><a href="#">LOGIN</a></li>
+                        <li class="pb-1"><a href="#">OUR STORY</a></li>
+                        <li class="pb-1"><a href="#">BREW GUIDES</a></li>
+                        <li class="pb-1"><a href="#">BLOG</a></li>
+                        <li class="pb-4"><a href="#">FAQS </a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -159,30 +161,32 @@
             <div class="wrap-image position-absolute start-0 h-100 w-100">
                 <picture>
                     <source media="(min-width: 992px)" srcset="./images/banner_6@2x.png" />
-                    <img src="./images/mob-banner_6@2x.png" alt="banner-image" class="w-100 h-100" />
+                    <img src="./images/hero-img-mobile.png" alt="banner-image" class="w-100 h-100" />
                 </picture>
             </div>
             <div
-                class="wrap-text d-flex  position-relative  text-center align-items-center text-lg-left flex-column justify-content-center">
+                class="wrap-text d-flex  position-relative  text-center align-items-center text-lg-left flex-column justify-content-center" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500" >
                 <div class="image_text">
                     <h1>BREW ANYWHERE. BE ANYWHERE.</h1>
                     <p class="px-4 mb-4">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
                     </p>
-                    <a href="#" class="btn btn-light"><span style="position: inherit;z-index: 9;">SHOP TRAVEL
-                            PRESS</span></a>
+                    <a href="#" class="btn btn-light"><span style="position: inherit;z-index: 9;">POUR ON THE GO</span></a>
                 </div>
             </div>
         </div>
-        <div class="explore-sec d-flex align-items-center justify-content-center position-absolute bottom-0 w-100 pb-4">
-            <p class="text-white fw-bold me-1">EXPLORE</p>
-            <span class="icon-esprobelow-arrow text-white aero mb-1"></span>
+        <div class="explore-sec d-flex align-items-center justify-content-center position-absolute bottom-0 w-100 pb-4" data-aos="fade-up"
+        data-aos-duration="3000">
+            <a href="#"><p class="text-white fw-bold me-1">EXPLORE</p></a>
+           <a href="#"><span class="icon-esprobelow-arrow text-white aero mb-1"></span></a> 
         </div>
     </section>
 
     <section>
-        <div class="container-fluid">
+        <div class="container-fluid mb-5">
             <div class="container px-0 align-items-center products-detail">
                 <div class="col-12" style="overflow: hidden;">
                     <div class="col-12 text-left text-center pt-lg-5 pt-5 pl-0 pr-0 pb-lg-1 pb-2">
@@ -190,12 +194,12 @@
                         <h3 class="pt-1">OUR BEST SELLERS</h3>
                     </div>
                     <div class="swiper mySwiper pt-1">
-                        <div class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
+                        <div data-aos="zoom-in-up" data-aos-duration="2000" class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
                             <div class="swiper-slide col-9 col-md-6 col-lg-3 col-9 col-md-6 col-lg-3 position-relative">
-                                <div class="product-slide">
+                                <div class="product-slide" >
                                     <div class="image-product bg-product px-4 py-4 my-1">
-                                        <img src="./images/product-slide-1.png" alt="product-slide"
-                                            class="w-100 h-100" />
+                                        <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" /></a>
                                     </div>
                                     <div class="text-overlay">
                                         <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
@@ -235,7 +239,7 @@
                                     </div>
 
                                     <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
-                                    <p class="price pt-4">$89.95 $99.95</p>
+                                    <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
                                     <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
                                         <div class="form-check">
                                             <a href=""><input type="radio" name="customRadio2" class="form-check-input"
@@ -557,34 +561,60 @@
         </div>
     </section>
 
-    <!-- <section>
-        <div class="container pt-5 ">
-            <div class="row">
-                <div class="col">
-                    <div class="col-6 d-flex flex-wrap blog-sec image-overlay position-relative">
-                        <div class="image-sec-1">
-                            <a href="#"> <img src="./images/explore-img-1.png" alt="coffee-img"></a>
+    <div class="blog-bg-color pt-4">
+        <section class="container mb-5 pt-3 ">
+            <div
+                class="d-flex flex-row blog-sec flex-wrap align-items-center flex-md-nowrap justify-content-between" >
+                <div class="blog-sec-imges d-flex flex-row w-100 px-2 order-2 order-md-1" data-aos="fade-right"  data-aos-duration="2000">
+                    <div class="position-relative  mt-1 mt-md-0 pt-md-0">
+                        <div class="img-sec position-relative">
+                            <a href="#" class=""><img src="./images/explore-img-1.png" alt="" id="bottle"
+                                    class="h-100 w-100"></a>
+                        </div>
+                        <div class="position-relative">
+                            <div class="img-sec-1 mt-4 pt-1 pt-md-0 mt-md-5">
+                                <a href="#"><img src="./images/explore-img-2.png" alt=""
+                                        class="h-100 w-100 mt-md-4 pt-md-1"></a>
+                                <div class="Image-3 d-none position-absolute">
+                                    <a href="#"><img src="./images/explore-img-3.png" alt="" class="h-100 w-100"></a>
+                                </div>
+                                <div class="small-imges-3 d-none position-absolute ">
+                                    <a href="#"><img src="./images/mobileExploreImage2.png" alt="#"
+                                            class="h-100 w-100"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="small-imges d-none position-absolute top-0 end-0 mt-4 me-4">
+                            <a href="#"><img src="./images/mobileExploreImage-1.png" alt="#" class="h-100 w-100"></a>
+                        </div>
+
+                        <div class="small-imges-2 d-none position-absolute top-25 end-0 mt-4">
+                            <a href="#"><img src="./images/mobileExploreImage-2.png" alt="#" class="h-100 w-100"></a>
                         </div>
                     </div>
-                    <div class="image-sec-2 offset-1 pt-5">
-                        <a href="#"> <img src="./images/explore-img-2.png" alt="coffee-img" class="pt-5"></a>
-                    </div>
                 </div>
-                <div class="col">
-                    <div class="blog-text">
-                        <h6>DESIGNED FOR REAL LIFE</h6>
-                        <h2>COFFEE MADE FOR YOUR LIFE ON THE GO.</h2>
-                        <p class="pt-1">We understand coffee is a big part of your busy, active life. That's why we
-                            create and develop products that allow you to bring your passion for <span>coffee-when you
-                                want it-</span> and wherever life takes you.</p>
+                <div
+                    class="blog-sec-details text-center text-md-start px-2  pt-md-0 d-flex flex-column order-1 order-md-2 justify-content-end align-items-end" data-aos="fade-left"  data-aos-duration="2000">
+                    <div class="pt-2 pt-md-0 px-2 px-md-0" data-aos="fade-left">
+                        <h6 class="my-0 pb-md-1">DESIGNED FOR REAL LIFE</h6>
+                        <h2 class="my-0 pb-1">COFFEE MADE FOR YOUR LIFE ON THE GO.</h2>
+                        <p class="my-0 mb-4 mt-md-2 mt-1 pb-2">We understand coffee is a big part of your busy, active
+                            life. That's
+                            why we
+                            create and develop products
+                            that allow you to bring your passion for
+                            <b>coffee-when you want it-</b> and wherever life takes you.
+                        </p>
                     </div>
-                    <div class="image-sec-3 pt-5">
-                        <img src="./images/explore-img-3.png" alt="">
+                    <div class="Image-3 d-block">
+                        <a href="#"><img src="./images/explore-img-3.png" alt="" class="h-100 w-100"></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section> -->
+        </section>
+    </div>
+
 
     <div class="container">
         <div class="explore-sec">
@@ -592,7 +622,7 @@
                 <h3>EXPLORE OUR PRODUCTS</h3>
             </div>
             <div class="row d-flex flex-wrap  pt-lg-4">
-                <div class="col-12 col-lg-4 images position-relative">
+                <div class="col-md-4 col-lg-4  pb-4 pb-md-0 images position-relative">
                     <div class="overlay">
                         <h5 class="position-absolute offset-1 text-white">FRENCH PRESS</h5>
                         <a href="#" class="position-absolute btn btn-light-sm d-none">SHOP NOW</a>
@@ -600,7 +630,7 @@
                         <img src="./images/Mask Group 8.png" alt="" class="w-100 h-100 d-none">
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 images image-2 img-color position-relative">
+                <div class="col-md-4 col-lg-4  pb-4 pb-md-0 images image-2 img-color position-relative">
                     <div class="overlay px-0">
                         <h5 class="position-absolute offset-1 text-white">POUR OVER</h5>
                         <a href="#" class="position-absolute btn btn-outline-primary btn-light-sm d-none">SHOP NOW</a>
@@ -608,7 +638,7 @@
                         <img src="./images/Mask Group 6@2x.png" alt="" class="d-none w-100 h-100">
                     </div>
                 </div>
-                <div class="col-12 col-lg-4 images image-2 img-colors position-relative">
+                <div class="col-md-4 col-lg-4  pb-4 pb-md-0 images image-2 img-colors position-relative">
                     <div class="overlay">
                         <h5 class="position-absolute offset-1 text-white">COLD BREW</h5>
                         <a href="#" class="position-absolute btn btn-light-sm d-none">SHOP NOW</a>
@@ -623,7 +653,7 @@
         </div>
     </div>
 
-    <section>
+    <section class="pt-3">
         <div class="d-flex flex-row flex-wrap travel-sec pt-5">
             <div class="w-50 position-relative">
                 <div class="travel-sec-1">
@@ -667,24 +697,37 @@
                         isolates tea leaves to prevent oversteeping.”</h5>
                 </div>
             </div>
-            <div class="companies-logo d-flex col-12 align-items-center pt-5">
-                <div class="company-logo col-2">
-                    <img src="./images/past logo (1).svg" alt="logo">
+        </div>
+    </section>
+    <section class="container swiper LogoSlider">
+        <div class="row d-flex swiper-wrapper flex-nowrap justify-content-between pb-5 pt-lg-4 pb-lg-4">
+            <div class="col-lg-2 swiper-slide d-flex justify-content-center">
+                <div class="CompanyLogo">
+                    <a href="#"><img src="./images/past logo (1).svg" alt="" class="h-100 w-100"></a>
                 </div>
-                <div class="company-logo col-3">
-                    <img src="./images/homegrounds logo.png" alt="logo">
+            </div>
+            <div class="col-lg-3 swiper-slide d-flex justify-content-center">
+                <div class="CompanyLogo">
+                    <a href="#"><img src="./images/homegrounds logo.png" alt="" class="h-100 w-100"></a>
                 </div>
-                <div class="company-logo col-2 ">
-                    <img src="./images/martha stewart logo.png" alt="logo">
+            </div>
+            <div class="col-lg-2 swiper-slide d-flex justify-content-center">
+                <div class="CompanyLogo">
+                    <a href="#"><img src="./images/martha stewart logo.png" alt="" class="h-100 w-100"></a>
                 </div>
-                <div class="company-logo col-3 d-flex justify-content-start ">
-                    <img src="./images/buzzfeed logo.png" alt="logo">
+            </div>
+            <div class="col-lg-3 swiper-slide d-flex justify-content-center">
+                <div class="CompanyLogo">
+                    <a href="#"><img src="./images/buzzfeed logo.png" alt="" class="h-100 w-100"></a>
                 </div>
-                <div class="company-logo col-2 ">
-                    <img src="./images/fastcompany logo.png" alt="logo">
+            </div>
+            <div class="col-lg-2 swiper-slide d-flex justify-content-center">
+                <div class="CompanyLogo">
+                    <a href="#"><img src="./images/fastcompany logo.png" alt="" class="h-100 w-100"></a>
                 </div>
             </div>
         </div>
+        <div class="swiper-pagination"></div>
     </section>
 
     <div class="pt-5 pb-sm-5">
@@ -744,8 +787,9 @@
 
     <section class="pt-lg-3 pb-lg-5">
         <div class="container pb-lg-5 pt-lg-2">
-            <div class="d-flex flex-row flex-wrap pt-5 coffee-detail">
-                <div class="w-50 pt-5 text-left coffee-text">
+            <div
+                class="d-flex flex-row flex-wrap pt-5 coffee-detail flex-lg-nowrap justify-content-center align-items-center">
+                <div class="w-50 d-flex justify-content-center pt-5 text-left coffee-text">
                     <div>
                         <h6 class="text-left">THE ULTIMATE BREW GUIDES</h6>
                         <h3>COFFEE TO WATER RATIOS: HOW TO MEASURE COFFEE LIKE A PRO</h3>
@@ -755,16 +799,16 @@
                             you
                             can sense all its nuances across your 10,000 taste buds, but not so strong that it's
                             uncomfortable.</p>
-                        <p class="pb-3"> It’s an incredible experience—and too often, a hard one to come by</p>
+                        <p class="pb-3"> It's an incredible experience—and too often, a hard one to come by</p>
                         <div class="pt-4 pb-5">
                             <a href="#" class="btn btn-lg">LEARN MORE</a>
                         </div>
                     </div>
                 </div>
-                <div class="w-50  pb-5">
+                <div class="w-50  pb-5 d-flex justify-content-center me-4">
                     <div class="coffee-image position-relative">
-                        <img src="./images/flower.png" alt="flower">
-                        <div class="position-absolute">
+                        <a href="#"><img src="./images/flower.png" alt="flower" class="h-100 w-100"></a>
+                        <div class="position-absolute flowerLogo">
                             <a href="#"><img src="./images/Group 6@2x.png" alt="#" class="h-100 w-100"></a>
                         </div>
                     </div>
@@ -866,123 +910,6 @@
             </div>
         </div>
     </section>
-
-
-
-    <!-- <section class="pt-5">
-        <section class="container-fluid bg-airblue pt-5">
-            <footer class="container">
-                <div class="row flex-row justify-content-center align-items-center pb-lg-3 mb-lg-1 pt-1 pt-lg-0">
-                    <div class="col-lg-5 col-12 pt-lg-1 mb-lg-4">
-                        <div class="contactFooterSectionPart-1">
-                            <h4 class="text-white pt-2 mb-0">
-                                NEVER MISS A DROP.
-                            </h4>
-                            <p class="my-0 fw-normal pt-2">Sign up to be the first to know about exclusive new deals,
-                                product launches and more.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-12 pb-l px-lg-auto">
-                        <div class="form-floating  pt-lg-1 pt-3 mt-2 pb-sm-5 position-relative">
-                            <input type="email" class="bg-input-color form-control" id="floatingInput"
-                                placeholder="Youname@email.com">
-                            <label for="floatingInput" id="EmailLabel">Enter your email address</label>
-                            <div class="position-absolute top-25 end-0 pe-4 me-1 mt-lg-1 mt-2 pt-1">
-                                <a href="#" class="mt-2 pt-lg-0"><button
-                                        class="btn btn-link bg-transparent text-white">SIGN
-                                        UP</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="dotted"></div>
-                <div class="row pt-5">
-                    <div class="col-lg-4 col-12">
-                        <div class="Footerlogo mb-lg-1">
-                            <a href="#"><img src="./images/white espro logo.svg" alt=""></a>
-                        </div>
-                        <div class="ConatctDetail pt-4 mt-2 pb-1 pb-lg-0">
-                            <p class="text-white my-0 fw-bold">We're here to help.</p>
-                            <p class="text-white my-0 fw-normal">service@espro.com </p>
-                            <p class="text-white my-0 fw-normal mt-1 mt-lg-0">1.844.377.7622</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <div class="LearnPart pt-4 mt-2 mt-lg-0 pt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0 pb-1 pb-lg-0">
-                                <li class="pb-1"><a href="#" class="text-white text-uppercase">LEARN</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Blog </a></li>
-                                <li><a href="#" class="text-white text-capitalize"> Our Story</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Brew Guides</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Retailers</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <div class="SupportPart pt-4 mt-2 mt-lg-0 pt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0">
-                                <li class="pb-1"><a href="#" class="text-white text-uppercase">SUPPORT</a></li>
-                                <li><a href="#" class="text-white">FAQ </a></li>
-                                <li><a href="#" class="text-white text-capitalize">Shipping & Returns</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Our Guarantee</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 pe-lg-0">
-                        <div class="CompanyPart pt-4 pt-lg-0 mt-3 mt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0">
-                                <li class="pb-lg-1"><a href="#" class="text-white text-uppercase">COMPANY</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Contact </a></li>
-                                <li><a href="#" class="text-white text-capitalize"> Join Us</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Press</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2  col-6 px-0">
-                        <div class="SocialApp  pt-4 pt-lg-0 mt-3 mt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0">
-                                <li><a href="#" class="text-white text-uppercase">CONNECT WITH US</a></li>
-                                <li>
-                                    <div class="icons d-flex flex-row pt-2 mt-lg-1">
-                                        <div class="d-flex justify-content-center align-items-center me-2">
-                                            <a href="#"><span class="icon-esprofacebook-icon text-white"></span></a>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center me-2">
-                                            <a href="#"><span class="icon-esproinstragram-icon text-white"></span></a>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <a href="#"><span class="icon-esprotwiteer-icon text-white"></span></a>
-                                        </div>
-
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row CopyRightInfo pt-lg-5 mt-lg-2 pb-lg-2 pb-3">
-                    <div class="col-lg-9 col-12 order-2 order-lg-1">
-                        <div>
-                            <span>Copyright © 2021 Espro Inc.</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-12 pt-5 pt-lg-0 mt-1 mt-lg-0 d-flex flex-row col-12 order-1 order-lg-2">
-                        <div class="col-lg-9 col-5 text-lg-end">
-                            <span>Terms & Privacy</span>
-                        </div>
-                        <div class="col-lg col text-lg-end">
-                            <span>Patents</span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </footer>
-        </section>
-    </section> -->
 
 
     <div class="pt-5">
@@ -1102,8 +1029,8 @@
 
 
 
-
     <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/animation.js"></script>
     <script src="./js/index.js"></script>
 
 </body>
