@@ -81,43 +81,10 @@ var swiper = new Swiper(".ImageSwiper", {
 });
 
 
-const shopLink = document.getElementById("shop-link");
-const megaMenu = document.getElementById("megamenu");
-
-// Create a variable to track whether the mouse is currently over the mega menu
-let megaMenuHovered = false;
-
-// Function to open the mega menu
-function openMegaMenu() {
-    megaMenu.style.display = "block";
-    shopLink.querySelector(".aero").style.transform = "rotate(180deg)";
-}
-
-// Function to close the mega menu
-function closeMegaMenu() {
-    megaMenu.style.display = "none";
-    shopLink.querySelector(".aero").style.transform = "rotate(0deg)";
-}
-
-shopLink.addEventListener("mouseenter", () => {
-    openMegaMenu();
-});
-
-shopLink.addEventListener("mouseleave", () => {
-    if (!megaMenuHovered) {
-        closeMegaMenu();
-    }
-});
-
-megaMenu.addEventListener("mouseenter", () => {
-    megaMenuHovered = true;
-    openMegaMenu();
-});
-
-megaMenu.addEventListener("mouseleave", () => {
-    megaMenuHovered = false;
-    closeMegaMenu();
-});
+$(function(){
+    $("#header").load("header.html"); 
+    $("#footer").load("footer.html"); 
+  });
 
 
 var swiper = new Swiper(".LogoSlider", {
@@ -146,6 +113,37 @@ var swiper = new Swiper(".LogoSlider", {
 });
 
 AOS.init({})
+
+function openBox() {
+    var h = document.querySelector(".product-type");
+    var plus = document.getElementById('plussign');
+    var minus = document.getElementById('minussign');
+    var checkbox=document.querySelector('.checkboxdiv');
+    if (plus.classList.contains('invisible')) {
+        // Code to close the box
+        plus.classList.remove('invisible');
+        plus.classList.add('visible');
+        minus.classList.remove('visible');
+        minus.classList.add('invisible');
+        checkbox.style.transform="translateY(74px)";
+        h.style.transition = "all .3s ease-in-out";
+        h.style.maxHeight = "50px";
+        h.style.overflow = "hidden";
+        console.log('Box closed');
+    } else {
+        // Code to open the box
+        plus.classList.remove('visible');
+        plus.classList.add('invisible');
+        minus.classList.remove('invisible');
+        minus.classList.add('visible');
+        checkbox.style.transform="translateY(0px)";
+        // h.style.transition = "all .3s ease-in-out";
+        checkbox.style.transition = "all 0.3s ease-in-out";
+        h.style.maxHeight = "124px";
+        h.style.overflow = "visible";
+       console.log('Box opened');
+    }
+}
 
 
 

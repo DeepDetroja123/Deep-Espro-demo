@@ -144,6 +144,9 @@
     max-width: 1440px;
     min-height: inherit;
 }
+.collection-banner  .image_text .home-text{
+    font-size: 14px;
+}
 
 .container>.wrap-image>picture>img {
     object-fit: cover;
@@ -784,6 +787,9 @@
     .banner {
         min-height: 46.07vw;
     }
+    .collection-banner{
+        min-height: 35.08vw;
+    }
 
     .product-slide {
         width: 295px;
@@ -964,6 +970,21 @@
     .blog-sec-imges .small-imges-3.d-none {
         display: none !important;
     }
+    .collection-banner  .image_text{
+        max-width: 516px;
+    }
+    .CollectionPageItem .title-type p:first-child{
+        font-size: 14px;
+        font-family: var(--bs-font-Josefin-Sans) !important;
+        letter-spacing: 0;
+        line-height:1;
+    }
+    .product-type{
+       padding:18px 14px 20px;
+       /* max-height: 124px;
+       max-width: 300px; */
+    }
+   
 }
 
 @keyframes slideInFromLeft {

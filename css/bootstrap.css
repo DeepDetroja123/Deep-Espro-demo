@@ -2654,7 +2654,6 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  border: 1px solid rgba(0, 0, 0, 0.25);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2687,11 +2686,18 @@ textarea.form-control-lg {
   pointer-events: none;
   filter: none;
   opacity: 0.5;
+  border: 1px solid black;
+  margin-left: -1rem;
 }
 
 .form-check-input[disabled]~.form-check-label,
 .form-check-input:disabled~.form-check-label {
-  opacity: 0.5;
+  color: #221F20;
+  font-size: 12px;
+  font-family: var(--font-family-josefin) !important;
+  font-weight: normal;
+  line-height:1;
+  letter-spacing: 0;
 }
 
 .form-switch {

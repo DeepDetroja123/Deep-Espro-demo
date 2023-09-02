@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPRO</title>
+    <meta name="author" content="Espro">
+    <meta name="description" content="Espro shopping">
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./fonts/stylesheet.css" />
+    <link rel="stylesheet" href="./css/swiper-slide.css">
+    <link rel="stylesheet" href="./fonts/style.css" />
+    <link rel="shortcut icon" href="./images/Espro Logo.svg" type="image/x-icon" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+
+    <div id="header"></div>
+    <section class="banner collection-banner position-relative">
+        <div class="container p-0">
+            <div class="wrap-image position-absolute start-0 h-100 w-100">
+                <picture>
+                    <source media="(min-width: 992px)" srcset="./images/CollectionPageBanner.png" />
+                    <img src="./images/mob-coll@2x.png" alt="banner-image" class="w-100 h-100" />
+                </picture>
+            </div>
+            <div class="wrap-text d-flex  position-relative  text-center align-items-center text-lg-left flex-column justify-content-center"
+                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <div class="image_text">
+                    <p class="home-text">Home / French Press</p>
+                    <h1>FRENCH PRESS</h1>
+                    <p class="px-4 mb-4">
+                        Two innovations for a better brew. An isolated chamber stops extraction on a dime. A double
+                        micro-filter eliminates grit.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container-fluid mb-5">
+            <div class="container px-0 align-items-center products-detail">
+                <div class="pt-5 d-flex ">
+                    <div class="col-lg-3">
+                        <span class="fw-bold text-dark">
+                            53 Results found
+                        </span>
+                        <div onclick="openBox()" class="pt-4 mt-2">
+                            <div class="product-type border border-dark" id="avalibity">
+                                <div class="title-type position-relative">
+                                    <p class="fw-bold my-0">AVAILABILITY</p>
+                                    <div class="position-absolute invisible top-0 end-0 pe-2" id="plussign">
+                                        <a href="#"><img src="./images/plus.svg" alt="#"></a>
+                                    </div>
+                                    <div class="position-absolute visible top-0  end-0 pe-2" id="minussign">
+                                        <a href="#"><img src="./images/minus.svg" alt="#"></a>
+                                    </div>
+                                </div>
+                                <div class="pt-2 checkboxdiv">
+                                    <div class="form-check pt-1">
+                                        <input class="form-check-input me-2" type="checkbox" value=""
+                                            id="flexCheckDisabled" disabled>
+                                        <label class="form-check-label" for="flexCheckDisabled">
+                                            In stock
+                                        </label>
+                                    </div>
+                                    <div class="form-check pt-2">
+                                        <input class="form-check-input me-2" type="checkbox" value=""
+                                            id="flexCheckDisabled" disabled>
+                                        <label class="form-check-label" for="flexCheckDisabled">
+                                            Out of stock
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
+                        <div class="col-9 col-md-6 col-lg-4   position-relative">
+                            <div class="product-slide">
+                                <div class="image-product bg-product px-4 py-4 my-1">
+                                    <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" /></a>
+                                </div>
+                                <div class="text-overlay">
+                                    <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                                    <p class="price pt-4">$109.95 - $139.95</p>
+                                </div>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group">
+                                    <div class="form-check">
+                                        <a href="#"> <input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="form-check" for="customRadio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input" />
+                                            <label class="form-check" id="customRadio2" for="customRadio2"></label></a>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" id="customRadio1"
+                                                class="form-check-input" /></a>
+                                        <label class="form-check" id="customRadio3" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio4" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 col-md-6 col-lg-4  position-relative">
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge mb-2 position-absolute"> SALE </span>
+                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+
+                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio4" checked /></a>
+                                        <label class="form-check" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio1" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-9 col-md-6 col-lg-4 position-relative">
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge bg-badge-naviblue position-absolute">
+                                        NEW!
+                                    </span>
+                                    <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+                                <p class="pt-2 px-3">
+                                    BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ
+                                </p>
+                                <p class="price">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer"></div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/index.js"></script>
+
+</body>
+
+</html>

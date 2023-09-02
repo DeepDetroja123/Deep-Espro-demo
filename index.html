@@ -18,6 +18,9 @@
 
 <body>
 
+
+    <div id="header"></div>
+<!-- 
     <div class="container-fluid">
         <div class="col-12 header_title d-flex align-items-center justify-content-center ">
             <p class="text-center">FREE SHIPPING ON ALL U.S. ORDERS $49+ </p>
@@ -108,53 +111,55 @@
         </div>
     </header>
 
-    <div class="container-fluid" id="hide-on-mobile">
-        <div class="container mob-header pt-3 pb-4" id="view-toggle-container">
-            <div class="row d-flex align-items-center flex-nowrap">
-                <div class="col-4 d-flex justify-content-start" onclick="toggleNav()">
-                    <a href="#"><span class="icon-espronav-icon  d-block" id="menu-icon-mobile"></span></a>
-                    <a href=""> <span class="icon-esproclose-icon h-100 w-100 d-none" id="cancel-icon"></span></a>
+    <header class="position-sticky top-0 bg-white">
+        <div class="container-fluid" id="hide-on-mobile">
+            <div class="container mob-header pt-3 pb-4" id="view-toggle-container">
+                <div class="row d-flex align-items-center flex-nowrap">
+                    <div class="col-4 d-flex justify-content-start" onclick="toggleNav()">
+                        <a href="#"><span class="icon-espronav-icon  d-block" id="menu-icon-mobile"></span></a>
+                        <a href=""> <span class="icon-esproclose-icon h-100 w-100 d-none" id="cancel-icon"></span></a>
 
 
-                </div>
-                <div class="col-4 d-flex justify-content-around ">
-                    <a href="#"><img src="./images/ESPRO Logo.svg" alt="nav"></a>
-                </div>
-                <div class="col-4 d-flex justify-content-end mob-icon order">
-                    <a href="#"><span class="icon-esprosearch-icon mx-3"></span></a>
-                    <a href="#"> <span class="icon-esprobag-icon"></span></a>
-                    <span
-                        class="ms-1 show-num d-flex justify-content-center align-items-center bg-seagull rounded-circle">0</span>
+                    </div>
+                    <div class="col-4 d-flex justify-content-around ">
+                        <a href="#"><img src="./images/ESPRO Logo.svg" alt="nav"></a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end mob-icon order">
+                        <a href="#"><span class="icon-esprosearch-icon mx-3"></span></a>
+                        <a href="#"> <span class="icon-esprobag-icon"></span></a>
+                        <span
+                            class="ms-1 show-num d-flex justify-content-center align-items-center bg-seagull rounded-circle">0</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="position-relative">
-        <div class="bg-white w-100 pt-4 mobile-nav position-absolute" id="mobile-nav-link">
-            <div class="d-flex flex-column h-100 w-100 mob-main-nav">
-                <ul class="px-4 p-0">
-                    <li class="pt-2"><a href="#">SHOP PRODUCTS</a></li>
-                    <li class="pb-1"><a href="#">FRENCH PRESS</a></li>
-                    <li class="pb-1"><a href="#">POUR OVER</a></li>
-                    <li class="pb-1"><a href="#">TRAVEL PRESS</a></li>
-                    <li class="pb-1"><a href="#">COLD BREW</a></li>
-                    <li class="pb-1"><a href="#">ESPRESSO</a></li>
-                    <li class="pb-1"><a href="#">TASTING CUPS</a></li>
-                    <li class="pb-2"><a href="#">ACCESSORIES</a></li>
-                    <li class="pb-4"><a href="#">SHOP ALL</a></li>
-                </ul>
-                <div class="mob-sub-nav">
-                    <ul class="pt-2 pb-4 bg-primary-airblue-500 px-4  flex-grow-1 h-100">
-                        <li class="pb-2 pt-3"><a href="#">LOGIN</a></li>
-                        <li class="pb-1"><a href="#">OUR STORY</a></li>
-                        <li class="pb-1"><a href="#">BREW GUIDES</a></li>
-                        <li class="pb-1"><a href="#">BLOG</a></li>
-                        <li class="pb-4"><a href="#">FAQS </a></li>
+        <div class="position-relative">
+            <div class="bg-white w-100 pt-4 mobile-nav position-absolute" id="mobile-nav-link">
+                <div class="d-flex flex-column h-100 w-100 mob-main-nav">
+                    <ul class="px-4 p-0">
+                        <li class="pt-2"><a href="#">SHOP PRODUCTS</a></li>
+                        <li class="pb-1"><a href="#">FRENCH PRESS</a></li>
+                        <li class="pb-1"><a href="#">POUR OVER</a></li>
+                        <li class="pb-1"><a href="#">TRAVEL PRESS</a></li>
+                        <li class="pb-1"><a href="#">COLD BREW</a></li>
+                        <li class="pb-1"><a href="#">ESPRESSO</a></li>
+                        <li class="pb-1"><a href="#">TASTING CUPS</a></li>
+                        <li class="pb-2"><a href="#">ACCESSORIES</a></li>
+                        <li class="pb-4"><a href="#">SHOP ALL</a></li>
                     </ul>
+                    <div class="mob-sub-nav">
+                        <ul class="pt-2 pb-4 bg-primary-airblue-500 px-4  flex-grow-1 h-100">
+                            <li class="pb-2 pt-3"><a href="#">LOGIN</a></li>
+                            <li class="pb-1"><a href="#">OUR STORY</a></li>
+                            <li class="pb-1"><a href="#">BREW GUIDES</a></li>
+                            <li class="pb-1"><a href="#">BLOG</a></li>
+                            <li class="pb-4"><a href="#">FAQS </a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
+    </header> -->
 
     <section class="banner position-relative">
         <div class="container p-0">
@@ -164,24 +169,25 @@
                     <img src="./images/hero-img-mobile.png" alt="banner-image" class="w-100 h-100" />
                 </picture>
             </div>
-            <div
-                class="wrap-text d-flex  position-relative  text-center align-items-center text-lg-left flex-column justify-content-center" data-aos="fade-down"
-                data-aos-easing="linear"
-                data-aos-duration="1500" >
+            <div class="wrap-text d-flex  position-relative  text-center align-items-center text-lg-left flex-column justify-content-center"
+                data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
                 <div class="image_text">
                     <h1>BREW ANYWHERE. BE ANYWHERE.</h1>
                     <p class="px-4 mb-4">
                         Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
                         ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo.
                     </p>
-                    <a href="#" class="btn btn-light"><span style="position: inherit;z-index: 9;">POUR ON THE GO</span></a>
+                    <a href="#" class="btn btn-light"><span style="position: inherit;z-index: 9;">POUR ON THE
+                            GO</span></a>
                 </div>
             </div>
         </div>
-        <div class="explore-sec d-flex align-items-center justify-content-center position-absolute bottom-0 w-100 pb-4" data-aos="fade-up"
-        data-aos-duration="3000">
-            <a href="#"><p class="text-white fw-bold me-1">EXPLORE</p></a>
-           <a href="#"><span class="icon-esprobelow-arrow text-white aero mb-1"></span></a> 
+        <div class="explore-sec d-flex align-items-center justify-content-center position-absolute bottom-0 w-100 pb-4"
+            data-aos="fade-up" data-aos-duration="3000">
+            <a href="#">
+                <p class="text-white fw-bold me-1">EXPLORE</p>
+            </a>
+            <a href="#"><span class="icon-esprobelow-arrow text-white aero mb-1"></span></a>
         </div>
     </section>
 
@@ -194,12 +200,13 @@
                         <h3 class="pt-1">OUR BEST SELLERS</h3>
                     </div>
                     <div class="swiper mySwiper pt-1">
-                        <div data-aos="zoom-in-up" data-aos-duration="2000" class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
+                        <div data-aos="zoom-in-up" data-aos-duration="2000"
+                            class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
                             <div class="swiper-slide col-9 col-md-6 col-lg-3 col-9 col-md-6 col-lg-3 position-relative">
-                                <div class="product-slide" >
+                                <div class="product-slide">
                                     <div class="image-product bg-product px-4 py-4 my-1">
                                         <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
-                                            class="w-100 h-100" /></a>
+                                                class="w-100 h-100" /></a>
                                     </div>
                                     <div class="text-overlay">
                                         <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
@@ -563,9 +570,9 @@
 
     <div class="blog-bg-color pt-4">
         <section class="container mb-5 pt-3 ">
-            <div
-                class="d-flex flex-row blog-sec flex-wrap align-items-center flex-md-nowrap justify-content-between" >
-                <div class="blog-sec-imges d-flex flex-row w-100 px-2 order-2 order-md-1" data-aos="fade-right"  data-aos-duration="2000">
+            <div class="d-flex flex-row blog-sec flex-wrap align-items-center flex-md-nowrap justify-content-between">
+                <div class="blog-sec-imges d-flex flex-row w-100 px-2 order-2 order-md-1" data-aos="fade-right"
+                    data-aos-duration="2000">
                     <div class="position-relative  mt-1 mt-md-0 pt-md-0">
                         <div class="img-sec position-relative">
                             <a href="#" class=""><img src="./images/explore-img-1.png" alt="" id="bottle"
@@ -594,8 +601,8 @@
                         </div>
                     </div>
                 </div>
-                <div
-                    class="blog-sec-details text-center text-md-start px-2  pt-md-0 d-flex flex-column order-1 order-md-2 justify-content-end align-items-end" data-aos="fade-left"  data-aos-duration="2000">
+                <div class="blog-sec-details text-center text-md-start px-2  pt-md-0 d-flex flex-column order-1 order-md-2 justify-content-end align-items-end"
+                    data-aos="fade-left" data-aos-duration="2000">
                     <div class="pt-2 pt-md-0 px-2 px-md-0" data-aos="fade-left">
                         <h6 class="my-0 pb-md-1">DESIGNED FOR REAL LIFE</h6>
                         <h2 class="my-0 pb-1">COFFEE MADE FOR YOUR LIFE ON THE GO.</h2>
@@ -912,123 +919,9 @@
     </section>
 
 
-    <div class="pt-5">
-        <section class="container-fluid bg-airblue pt-4">
-            <footer class="container">
-                <div class="row flex-row justify-content-center align-items-center pb-lg-1 mb-lg-1 pt-1 pt-lg-0">
-                    <div class="col-lg-5 col-12 pt-lg-1 mb-lg-4">
-                        <div class="contactFooterSectionPart-1">
-                            <h5 class="text-white pt-4 mb-0">
-                                NEVER MISS A DROP.
-                            </h5>
-                            <p class="my-0 fw-normal pt-2">Sign up to be the first to know about exclusive new deals,
-                                product launches and more.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-7 col-12 pb-2 mb-4 pb-lg-0 mb-lg-0  px-lg-auto">
-                        <div class="form-floating mb-1 mt-lg-5 pt-lg-1 pt-3 mt-2 position-relative">
-                            <input type="email" class="form-control" id="floatingInput" placeholder="Email address">
-                            <label for="floatingInput" id="EmailLabel">Enter your email address</label>
-                            <div class="position-absolute top-25 end-0 pe-4 me-1 mt-lg-1 mt-2 pt-1">
-                                <a href="#" class="mt-2 pt-lg-0"><button
-                                        class="btn btn-link bg-transparent text-white">SIGN
-                                        UP</button></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="mb-lg-4" id="dotted">
-                </div>
-                <div class="row pt-lg-2">
-                    <div class="col-lg-4 col-12 pt-4 mt-2 pt-lg-0 mt-lg-0">
-                        <div class="Footerlogo mb-lg-1">
-                            <a href="#"><img src="./images/white espro logo.svg" alt=""></a>
-                        </div>
-                        <div class="ConatctDetail pt-4 mt-2 pb-1 pb-lg-0">
-                            <p class="text-white my-0 fw-bold">We're here to help.</p>
-                            <p class="text-white my-0 fw-normal">service@espro.com </p>
-                            <p class="text-white my-0 fw-normal mt-1 mt-lg-0">1.844.377.7622</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <div class="LearnPart pt-4 mt-2 mt-lg-0 pt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0 pb-1 pb-lg-0">
-                                <li class="pb-1"><a href="#" class="text-white text-uppercase">LEARN</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Blog </a></li>
-                                <li><a href="#" class="text-white text-capitalize"> Our Story</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Brew Guides</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Retailers</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6">
-                        <div class="SupportPart pt-4 mt-2 mt-lg-0 pt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0">
-                                <li class="pb-1"><a href="#" class="text-white text-uppercase">SUPPORT</a></li>
-                                <li><a href="#" class="text-white">FAQ </a></li>
-                                <li><a href="#" class="text-white text-capitalize">Shipping & Returns</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Our Guarantee</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2 col-6 pe-lg-0">
-                        <div class="CompanyPart pt-4 pt-lg-0 mt-3 mt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0">
-                                <li class="pb-lg-1"><a href="#" class="text-white text-uppercase">COMPANY</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Contact </a></li>
-                                <li><a href="#" class="text-white text-capitalize"> Join Us</a></li>
-                                <li><a href="#" class="text-white text-capitalize">Press</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-2  col-6 px-0">
-                        <div class="SocialApp  pt-4 pt-lg-0 mt-3 mt-lg-0">
-                            <ul class="d-flex flex-column my-0 ps-0">
-                                <li><a href="#" class="text-white text-uppercase">CONNECT WITH US</a></li>
-                                <li>
-                                    <div class="d-flex flex-row pt-2 mt-lg-1">
-                                        <div class="d-flex justify-content-center align-items-center me-2">
-                                            <a href="#"><span class="icon-esprofacebook-icon text-white"></span></a>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center me-2">
-                                            <a href="#"><span class="icon-esproinstragram-icon text-white"></span></a>
-                                        </div>
-                                        <div class="d-flex justify-content-center align-items-center">
-                                            <a href="#"><span class="icon-esprotwiteer-icon text-white"></span></a>
-                                        </div>
+  <div id="footer"></div>
 
-                                    </div>
-                                </li>
-
-                            </ul>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row CopyRightInfo pt-lg-5 mt-lg-2 pb-lg-2 pb-3">
-                    <div class="col-lg-9 col-12 order-2 order-lg-1">
-                        <div>
-                            <span>Copyright © 2021 Espro Inc.</span>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-12 pt-5 pt-lg-0 mt-1 mt-lg-0 d-flex flex-row col-12 order-1 order-lg-2">
-                        <div class="col-lg-9 col-5 text-lg-end">
-                            <span>Terms & Privacy</span>
-                        </div>
-                        <div class="col-lg col text-lg-end">
-                            <span>Patents</span>
-                        </div>
-
-                    </div>
-
-                </div>
-            </footer>
-        </section>
-    </div>
-
-
-
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/animation.js"></script>
     <script src="./js/index.js"></script>

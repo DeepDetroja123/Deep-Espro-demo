@@ -136,3 +136,41 @@
         </div>
     </div>
 </div>
+
+<script>
+    const shopLink = document.getElementById("shop-link");
+const megaMenu = document.getElementById("megamenu");
+
+let megaMenuHovered = false;
+
+
+function openMegaMenu() {
+    megaMenu.style.display = "block";
+    shopLink.querySelector(".aero").style.transform = "rotate(180deg)";
+}
+
+function closeMegaMenu() {
+    megaMenu.style.display = "none";
+    shopLink.querySelector(".aero").style.transform = "rotate(0deg)";
+}
+
+shopLink.addEventListener("mouseenter", () => {
+    openMegaMenu();
+});
+
+shopLink.addEventListener("mouseleave", () => {
+    if (!megaMenuHovered) {
+        closeMegaMenu();
+    }
+});
+
+megaMenu.addEventListener("mouseenter", () => {
+    megaMenuHovered = true;
+    openMegaMenu();
+});
+
+megaMenu.addEventListener("mouseleave", () => {
+    megaMenuHovered = false;
+    closeMegaMenu();
+});
+</script>
