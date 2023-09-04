@@ -139,6 +139,23 @@
 .banner {
     min-height: 166.08vw;
 }
+.collection-banner{
+    min-height: 88.09vw;
+}
+.product-price{
+    padding-right: 0px;
+}
+.product-result{
+    display: none;
+}
+.product-type{
+    padding:18px 14px 20px;
+}
+.filter{
+    display: block;
+    padding-top :8px;
+    padding-bottom :8px;
+ }
 
 .banner .container {
     max-width: 1440px;
@@ -154,9 +171,13 @@
     aspect-ratio: 2.21;
 }
 
+.swiper-button-next a span {
+    background-color: white;
+    transform: rotate(-90deg);
+}
 .swiper-button-prev a span {
     background-color: white;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .wrap-text {
@@ -195,7 +216,26 @@
     line-height: 1.5;
     letter-spacing: 0.025em;
 }
-
+.collectionProduct .product-slide p{
+    font-family: var(--font-family-josefin);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
+}
+.collectionProduct .product-slide.remove-price {
+    color: #CACCCE;
+    text-decoration: line-through;
+    color: grey;
+    opacity: 0.5;
+}
+.collectionProduct .product-slide .price {
+    font-family: var(--font-family-nunito);
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.4;
+    margin-left: 15px;
+}
 .col-lg-3 .price {
     font-family: var(--font-family-nunito);
     font-size: 15px;
@@ -244,6 +284,10 @@
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
     width: 310px;
+}
+.collection-image .product-slide{
+    width: 310px;
+    margin: 0 auto;
 }
 
 .image-product {
@@ -590,7 +634,7 @@
 .mySwiper .swiper-button-prev span,
 .blogSwiper .swiper-button-prev span {
     display: inline-block;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
 }
 
 .PostSection .row div:first-child div {
@@ -608,6 +652,18 @@
     background-position: bottom;
     background-size: 20px;
 }
+#closeButton {
+    top: -332px;
+    right: -24px;
+}
+#iframe_video {
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+    opacity: 9999999;
+}
+
 
 @keyframes marquee {
     0% {
@@ -981,8 +1037,15 @@
     }
     .product-type{
        padding:18px 14px 20px;
-       /* max-height: 124px;
-       max-width: 300px; */
+    }
+    .product-result{
+        display: block;
+    }
+    .filter{
+        display: none;
+    }
+    .product-price{
+        padding-right: 25px;
     }
    
 }

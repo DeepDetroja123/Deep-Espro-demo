@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'espro-Font-Family';
-  src:  url('espro-Font-Family.eot?etzp7e');
-  src:  url('espro-Font-Family.eot?etzp7e#iefix') format('embedded-opentype'),
-    url('espro-Font-Family.ttf?etzp7e') format('truetype'),
-    url('espro-Font-Family.woff?etzp7e') format('woff'),
-    url('espro-Font-Family.svg?etzp7e#espro-Font-Family') format('svg');
+  font-family: 'DemoEspro';
+  src:  url('DemoEspro.eot?yhzxq4');
+  src:  url('DemoEspro.eot?yhzxq4#iefix') format('embedded-opentype'),
+    url('DemoEspro.ttf?yhzxq4') format('truetype'),
+    url('DemoEspro.woff?yhzxq4') format('woff'),
+    url('DemoEspro.svg?yhzxq4#DemoEspro') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -12,7 +12,7 @@
 
 [class^="icon-espro"], [class*=" icon-espro"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'espro-Font-Family' !important;
+  font-family: 'DemoEspro' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
@@ -20,44 +20,63 @@
   text-transform: none;
   line-height: 1;
   font-size: 19px;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-esproaccount-icon:before {
-  content: "\e900";
+.icon-esprofilter:before {
+  content: "\e90c";
 }
-.icon-esproarrow-below-fill:before {
-  content: "\e901";
+.icon-esprolocation:before {
+  content: "\e90d";
 }
-.icon-esprobag-icon:before {
-  content: "\e902";
+.icon-esprominus:before {
+  content: "\e90e";
 }
-.icon-esprobelow-arrow:before {
-  content: "\e903";
+.icon-esproplus:before {
+  content: "\e90f";
 }
-.icon-esproclose-icon:before {
-  content: "\e904";
+.icon-esproshipment:before {
+  content: "\e910";
 }
-.icon-esprofacebook-icon:before {
-  content: "\e905";
+.icon-esprotwitter:before {
+  content: "\e911";
 }
-.icon-esproinstragram-icon:before {
-  content: "\e906";
+.icon-esprostar:before {
+  content: "\e90b";
 }
-.icon-espronav-icon:before {
-  content: "\e907";
-}
-.icon-esproplay-icon:before {
-  content: "\e908";
-}
-.icon-esproright-arrow:before {
-  content: "\e909";
-}
-.icon-esprosearch-icon:before {
+.icon-esprodown-arrow:before {
   content: "\e90a";
 }
-.icon-esprotwiteer-icon:before {
-  content: "\e90b";
+.icon-esprodrop-down:before {
+  content: "\e909";
+}
+.icon-esproaccount:before {
+  content: "\e900";
+}
+.icon-esprobag:before {
+  content: "\e901";
+}
+.icon-esproclose:before {
+  content: "\e902";
+}
+.icon-esprofacebook:before {
+  content: "\e903";
+}
+.icon-esproinstagram:before {
+  content: "\e904";
+}
+.icon-espronav:before {
+  content: "\e905";
+}
+.icon-esproplay:before {
+  content: "\e906";
+}
+.icon-esproright:before {
+  content: "\e907";
+}
+.icon-esprosearch:before {
+  content: "\e908";
 }

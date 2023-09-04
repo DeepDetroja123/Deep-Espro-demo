@@ -44,47 +44,410 @@
     </section>
 
 
-    <section>
-        <div class="container-fluid mb-5">
-            <div class="container px-0 align-items-center products-detail">
-                <div class="pt-5 d-flex ">
-                    <div class="col-lg-3">
-                        <span class="fw-bold text-dark">
-                            53 Results found
-                        </span>
-                        <div onclick="openBox()" class="pt-4 mt-2">
-                            <div class="product-type border border-dark" id="avalibity">
-                                <div class="title-type position-relative">
-                                    <p class="fw-bold my-0">AVAILABILITY</p>
-                                    <div class="position-absolute invisible top-0 end-0 pe-2" id="plussign">
-                                        <a href="#"><img src="./images/plus.svg" alt="#"></a>
+    <section class="container">
+        <div class="col-12 pt-4 filter">
+            <div class="border border-dark filter d-flex text-center justify-content-center align-items-center">
+                Filter
+            </div>
+        </div>
+    </section>
+    <section class="container CollectionPageItem mb-5 pt-5">
+        <div class="pt-sm-3 d-flex flex-wrap flex-sm-nowrap">
+            <div class="col-lg-3 col-sm-4 col-12 product-price">
+                <span class="fw-bold text-dark product-result">
+                    53 Results found
+                </span>
+                <div onclick="openBox()" class="col-12 pt-5">
+                    <div class="product-type border border-dark" id="avalibity">
+                        <div class="title-type position-relative ">
+                            <p class="fw-bold my-0">AVAILABILITY</p>
+                            <div class="position-absolute invisible top-0 end-0 pe-2" id="plussign">
+                                <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                            </div>
+                            <div class="position-absolute visible top-0  end-0 pe-2" id="minussign">
+                                <a href="#"><img src="./images/minus.svg" alt="#" style="font-size: 12px;"></a>
+                            </div>
+                        </div>
+                        <div class="checkboxdiv">
+                            <div class="form-check pt-1">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDisabled"
+                                    disabled>
+                                <label class="form-check-label" for="flexCheckDisabled">
+                                    In stock
+                                </label>
+                            </div>
+                            <div class="form-check pt-2">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDisabled"
+                                    disabled>
+                                <label class="form-check-label" for="flexCheckDisabled">
+                                    Out of stock
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="product-type position-relative  border border-dark" id="producttype">
+                        <div class="title-type position-relative" onclick="openProductBox()">
+                            <a href="JavaScript:void(0);">
+                                <p class="fw-bold my-0">PRODUCT TYPE</p>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign-p">
+                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                                </div>
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign-p">
+                                    <a href="#"><span class="icon-esprominus"></span></a>
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="checkboxdiv position-absolute invisible" id="pcheckboxdiv">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="check3" name="option3"
+                                    value="something">
+                                <label class="form-check-label">French press </label>
+                            </div>
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="check4" name="option4"
+                                    value="something">
+                                <label class="form-check-label">Pour over</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check5" name="option5"
+                                    value="something">
+                                <label class="form-check-label"> Cold brew</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="product-type border border-dark" id="avalibity">
+                        <div class="title-type position-relative">
+                            <a href="JavaScript:void(0);">
+                                <p class="fw-bold my-0">BRAND</p>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign">
+                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                                </div>
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign">
+                                    <img src="./images/minus.svg" alt="#">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="product-type position-relative  border border-dark" id="color">
+                        <div class="title-type position-relative" onclick="openColor()">
+                            <a href="JavaScript:void(0);">
+                                <p class="fw-bold my-0">COLOR</p>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign-c">
+                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                                </div>
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign-c">
+                                    <img src="./images/minus.svg" alt="#">
+                                </div>
+                            </a>
+                        </div>
+                        <div class="pt-2 mt-1 RadioButtondiv invisible position-absolute">
+                            <div class="d-flex flex-row flex-wrap flex-grow-1 me-4">
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault1" checked>
+                                    <label class="form-check-label" for="flexRadioDefault1"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault2">
+                                    <label class="form-check-label" for="flexRadioDefault2"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault3">
+                                    <label class="form-check-label" for="flexRadioDefault3"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                        id="flexRadioDefault4">
+                                    <label class="form-check-label" for="flexRadioDefault4"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                        id="flexRadioDefault5">
+                                    <label class="form-check-label" for="flexRadioDefault5"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
+                                        id="flexRadioDefault6">
+                                    <label class="form-check-label" for="flexRadioDefault6"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault7">
+                                    <label class="form-check-label" for="flexRadioDefault7"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault8">
+                                    <label class="form-check-label" for="flexRadioDefault8"></label>
+                                </div>
+                                <div class="form-check me-2">
+                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
+                                        id="flexRadioDefault9">
+                                    <label class="form-check-label" for="flexRadioDefault9"></label>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-3">
+                    <div class="product-type border border-dark" id="size">
+                        <div class="title-type position-relative">
+                            <a href="JavaScript:void(0);">
+                                <p class="fw-bold my-0">SIZE</p>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign">
+                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                                </div>
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign">
+                                    <img src="./images/minus.svg" alt="#">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9 col-sm-8 col-12 collection-image">
+                <div class="row gy-6">
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="w-100 px-0 pb-3 h-auto position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge mb-2 position-absolute"> SALE </span>
+                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio4" checked /></a>
+                                        <label class="form-check" for="customRadio3"></label>
                                     </div>
-                                    <div class="position-absolute visible top-0  end-0 pe-2" id="minussign">
-                                        <a href="#"><img src="./images/minus.svg" alt="#"></a>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio1" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
                                     </div>
                                 </div>
-                                <div class="pt-2 checkboxdiv">
-                                    <div class="form-check pt-1">
-                                        <input class="form-check-input me-2" type="checkbox" value=""
-                                            id="flexCheckDisabled" disabled>
-                                        <label class="form-check-label" for="flexCheckDisabled">
-                                            In stock
-                                        </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge bg-badge-naviblue position-absolute">
+                                        NEW!
+                                    </span>
+                                    <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+                                <p class="pt-2 px-3">
+                                    BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ
+                                </p>
+                                <p class="price">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product px-4 py-4 my-1">
+                                    <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" /></a>
+                                </div>
+                                <div class="text-overlay">
+                                    <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                                    <p class="price pt-4">$109.95 - $139.95</p>
+                                </div>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group">
+                                    <div class="form-check">
+                                        <a href="#"> <input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="form-check" for="customRadio1"></label>
                                     </div>
-                                    <div class="form-check pt-2">
-                                        <input class="form-check-input me-2" type="checkbox" value=""
-                                            id="flexCheckDisabled" disabled>
-                                        <label class="form-check-label" for="flexCheckDisabled">
-                                            Out of stock
-                                        </label>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio" class="form-check-input" />
+                                            <label class="form-check" id="customRadio2" for="customRadio2"></label></a>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio" id="customRadio1"
+                                                class="form-check-input" /></a>
+                                        <label class="form-check" id="customRadio3" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio4" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
 
-                    <div class="row d-flex flex-row flex-nowrap flex-wrap swiper-wrapper pt-4">
-                        <div class="col-9 col-md-6 col-lg-4   position-relative">
+                            <div class="product-slide">
+                                <div class="bg-product py-4 px-4 my-1 image-badge">
+                                    <span class="badge bg-badge-lightblue position-absolute">
+                                        BACK IN STOCK
+                                    </span>
+                                    <img src="./images/product-slide-4.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+                                <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                <p class="price pt-2">$44.95</p>
+                                <div class="px-3 pt-2 pb-3 d-flex flex-row" id="radio-group-1">
+                                    <div class="custom-control">
+                                        <a href="#"><input type="radio" name="customRadio4" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="custom-control-label" for="customRadio3"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href="#"><input type="radio" name="customRadio4"
+                                                class="form-check-input" /></a>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href="#"><input type="radio" name="customRadio4" class="form-check-input" />
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href="#"><input type="radio" name="customRadio4" class="form-check-input"
+                                                id="customRadio4" /></a>
+
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href="#"><input type="radio" name="customRadio4"
+                                                class="form-check-input" /></a>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href="#"><input type="radio" name="customRadio4" class="form-check-input"
+                                                id="customRadio4" /></a>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product px-4 py-4 my-1">
+                                    <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" /></a>
+                                </div>
+                                <div class="text-overlay">
+                                    <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                                    <p class="price pt-4">$109.95 - $139.95</p>
+                                </div>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group">
+                                    <div class="form-check">
+                                        <a href="#"> <input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="form-check" for="customRadio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio" class="form-check-input" />
+                                            <label class="form-check" id="customRadio2" for="customRadio2"></label></a>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio" id="customRadio1"
+                                                class="form-check-input" /></a>
+                                        <label class="form-check" id="customRadio3" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio4" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge mb-2 position-absolute"> SALE </span>
+                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+
+                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio4" checked /></a>
+                                        <label class="form-check" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio1" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 h-auto position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge mb-2 position-absolute"> SALE </span>
+                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+
+                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio4" checked /></a>
+                                        <label class="form-check" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio1" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge bg-badge-naviblue position-absolute">
+                                        NEW!
+                                    </span>
+                                    <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+                                <p class="pt-2 px-3">
+                                    BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ
+                                </p>
+                                <p class="price">$99.95</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
                             <div class="product-slide">
                                 <div class="image-product bg-product px-4 py-4 my-1">
                                     <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
@@ -117,7 +480,93 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-9 col-md-6 col-lg-4  position-relative">
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+
+                            <div class="product-slide">
+                                <div class="bg-product py-4 px-4 my-1 image-badge">
+                                    <span class="badge bg-badge-lightblue position-absolute">
+                                        BACK IN STOCK
+                                    </span>
+                                    <img src="./images/product-slide-4.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
+                                <p class="pt-2 px-3 me-5">ESPRO ULTRALIGHT COFFEE PRESS P0</p>
+                                <p class="price pt-2">$44.95</p>
+                                <div class="px-3 pt-2 pb-3 d-flex flex-row" id="radio-group-1">
+                                    <div class="custom-control">
+                                        <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="custom-control-label" for="customRadio3"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href=""><input type="radio" name="customRadio4"
+                                                class="form-check-input" /></a>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href=""><input type="radio" name="customRadio4" class="form-check-input" />
+                                            <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                id="customRadio4" /></a>
+
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href=""><input type="radio" name="customRadio4"
+                                                class="form-check-input" /></a>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                    <div class="custom-control">
+                                        <a href=""><input type="radio" name="customRadio4" class="form-check-input"
+                                                id="customRadio4" /></a>
+                                        <label class="custom-control-label" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+                            <div class="product-slide">
+                                <div class="image-product bg-product px-4 py-4 my-1">
+                                    <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" /></a>
+                                </div>
+                                <div class="text-overlay">
+                                    <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                                    <p class="price pt-4">$109.95 - $139.95</p>
+                                </div>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group">
+                                    <div class="form-check">
+                                        <a href="#"> <input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="form-check" for="customRadio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input" />
+                                            <label class="form-check" id="customRadio2" for="customRadio2"></label></a>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" id="customRadio1"
+                                                class="form-check-input" /></a>
+                                        <label class="form-check" id="customRadio3" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio4" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 pt-4">
+                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+
                             <div class="product-slide">
                                 <div class="image-product bg-product py-4 px-4 my-1">
                                     <span class="badge mb-2 position-absolute"> SALE </span>
@@ -139,33 +588,14 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-9 col-md-6 col-lg-4 position-relative">
-                            <div class="product-slide">
-                                <div class="image-product bg-product py-4 px-4 my-1">
-                                    <span class="badge bg-badge-naviblue position-absolute">
-                                        NEW!
-                                    </span>
-                                    <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100" />
-                                </div>
-                                <p class="pt-2 px-3">
-                                    BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ
-                                </p>
-                                <p class="price">$99.95</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
     </section>
-
-
-
-
-
-
-
 
 
 

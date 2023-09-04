@@ -114,36 +114,72 @@ var swiper = new Swiper(".LogoSlider", {
 
 AOS.init({})
 
-function openBox() {
-    var h = document.querySelector(".product-type");
-    var plus = document.getElementById('plussign');
-    var minus = document.getElementById('minussign');
-    var checkbox=document.querySelector('.checkboxdiv');
-    if (plus.classList.contains('invisible')) {
-        // Code to close the box
-        plus.classList.remove('invisible');
-        plus.classList.add('visible');
-        minus.classList.remove('visible');
-        minus.classList.add('invisible');
-        checkbox.style.transform="translateY(74px)";
-        h.style.transition = "all .3s ease-in-out";
-        h.style.maxHeight = "50px";
-        h.style.overflow = "hidden";
-        console.log('Box closed');
-    } else {
-        // Code to open the box
-        plus.classList.remove('visible');
-        plus.classList.add('invisible');
-        minus.classList.remove('invisible');
-        minus.classList.add('visible');
-        checkbox.style.transform="translateY(0px)";
-        // h.style.transition = "all .3s ease-in-out";
-        checkbox.style.transition = "all 0.3s ease-in-out";
-        h.style.maxHeight = "124px";
-        h.style.overflow = "visible";
-       console.log('Box opened');
+
+function youtube_video() {
+    const iframeVideo = document.getElementById("iframe_video");
+    iframeVideo.src="https://www.youtube.com/embed/-6g_biX1c&ab";
+    document.body.style.overflow = "hidden";
+    document.body.scrollTop;
+    $("body").remove('position-static');
+    var model = document.getElementById('videoModal');
+    var modelContent = document.getElementById('model-content');
+    if (screen.width >= 992) {
+        modelContent.style.width = (screen.width / 2.4) + 40 + "px";
+        modelContent.style.height = (screen.height / 3) + 40 + "px";
     }
+    else if (screen.width >= 576) {
+        modelContent.style.width = (screen.width) / 1.2 + "px";
+        modelContent.style.height = (screen.height / 2.3) + "px";
+    }
+    else {
+        modelContent.style.width = (screen.width - 20) + "px";
+        modelContent.style.height = (screen.height / 4.01) + "px";
+    }
+    model.classList.remove('invisible');
+    model.classList.add('visible');
+    model.shadowRoot;
+    console.log('ok');
 }
+function closeModal() {
+    document.body.style.overflow = "visible";
+    const iframeVideo = document.getElementById("iframe_video");
+    iframeVideo.src="";
+    $("body").remove('noscroll');
+    var model = document.getElementById('videoModal');
+    model.classList.remove('visible');
+    model.classList.add('invisible');
+    model.shadowRoot;
+    console.log('ok');
+}
+
+// function openBox() {
+//     var h = document.querySelector(".product-type");
+//     var plus = document.getElementById('plussign');
+//     var minus = document.getElementById('minussign');
+//     var checkbox=document.querySelector('.checkboxdiv');
+//     if (plus.classList.contains('invisible')) {
+//         // Code to close the box
+//         plus.classList.remove('invisible');
+//         plus.classList.add('visible');
+//         minus.classList.remove('visible');
+//         minus.classList.add('invisible');
+//         checkbox.style.transform="translateY(74px)";
+//         h.style.transition = "all .3s ease-in-out";
+//         h.style.maxHeight = "50px";
+//         h.style.overflow = "hidden";
+//     } else {
+//         // Code to open the box
+//         plus.classList.remove('visible');
+//         plus.classList.add('invisible');
+//         minus.classList.remove('invisible');
+//         minus.classList.add('visible');
+//         checkbox.style.transform="translateY(0px)";
+//         // h.style.transition = "all .3s ease-in-out";
+//         checkbox.style.transition = "all 0.3s ease-in-out";
+//         h.style.maxHeight = "124px";
+//         h.style.overflow = "visible";
+//     }
+// }
 
 
 
