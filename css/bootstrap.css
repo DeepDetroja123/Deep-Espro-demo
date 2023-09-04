@@ -57,7 +57,9 @@
   --bs-dark: #212529;
   --bg-radio-1: #CACCCE;
   --bg-radio-2: #ffffff;
-  --bg-radio-4: #000000;
+  --bg-radio-3: #676B6D;
+  --bg-radio-5: #285C4D;
+  --bg-radio-6: #02205C;
   --h1-color: #AACBD8;
   --span-color: #D8E6EB; 
   --image-bg-color: #EFF5F7;
@@ -2666,6 +2668,19 @@ textarea.form-control-lg {
 }
 #customRadio4{
   background-color:  var(--black);
+}
+#customRadio2{
+  background-color: var(--white);
+  border: 1px solid grey;
+}
+#customRadio3{
+  background-color: var(--bg-radio-3);
+}
+#customRadio5{
+  background-color: var(--bg-radio-5);
+}
+#customRadio6{
+  background-color: var(--bg-radio-6);
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -6298,7 +6313,7 @@ fieldset:disabled .btn {
 
 @media (min-width: 576px) {
   .modal-dialog {
-    max-width: 500px;
+    /* max-width: 500px; */
     margin: 1.75rem auto;
   }
 

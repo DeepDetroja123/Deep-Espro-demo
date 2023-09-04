@@ -117,7 +117,7 @@ AOS.init({})
 
 function youtube_video() {
     const iframeVideo = document.getElementById("iframe_video");
-    iframeVideo.src="https://www.youtube.com/embed/-6g_biX1c&ab";
+    iframeVideo.src="https://www.youtube.com/embed/j97TIrMKx1Q";
     document.body.style.overflow = "hidden";
     document.body.scrollTop;
     $("body").remove('position-static');
@@ -152,35 +152,39 @@ function closeModal() {
     console.log('ok');
 }
 
-// function openBox() {
-//     var h = document.querySelector(".product-type");
-//     var plus = document.getElementById('plussign');
-//     var minus = document.getElementById('minussign');
-//     var checkbox=document.querySelector('.checkboxdiv');
-//     if (plus.classList.contains('invisible')) {
-//         // Code to close the box
-//         plus.classList.remove('invisible');
-//         plus.classList.add('visible');
-//         minus.classList.remove('visible');
-//         minus.classList.add('invisible');
-//         checkbox.style.transform="translateY(74px)";
-//         h.style.transition = "all .3s ease-in-out";
-//         h.style.maxHeight = "50px";
-//         h.style.overflow = "hidden";
-//     } else {
-//         // Code to open the box
-//         plus.classList.remove('visible');
-//         plus.classList.add('invisible');
-//         minus.classList.remove('invisible');
-//         minus.classList.add('visible');
-//         checkbox.style.transform="translateY(0px)";
-//         // h.style.transition = "all .3s ease-in-out";
-//         checkbox.style.transition = "all 0.3s ease-in-out";
-//         h.style.maxHeight = "124px";
-//         h.style.overflow = "visible";
-//     }
-// }
+function openBox() {
+    var h = document.querySelector(".product-type");
+    var plus = document.getElementById('plussign');
+    var minus = document.getElementById('minussign');
+    var checkbox=document.querySelector('.checkboxdiv');
+    if (plus.classList.contains('invisible')) {
+        // Code to close the box
+        plus.classList.remove('invisible');
+        plus.classList.add('visible');
+        minus.classList.remove('visible');
+        minus.classList.add('invisible');
+        checkbox.style.transform="translateY(74px)";
+        h.style.transition = "all .3s ease-in-out";
+        h.style.maxHeight = "50px";
+        h.style.overflow = "hidden";
+    } else {
+        // Code to open the box
+        plus.classList.remove('visible');
+        plus.classList.add('invisible');
+        minus.classList.remove('invisible');
+        minus.classList.add('visible');
+        checkbox.style.transform="translateY(0px)";
+        // h.style.transition = "all .3s ease-in-out";
+        checkbox.style.transition = "all 0.3s ease-in-out";
+        h.style.maxHeight = "124px";
+        h.style.overflow = "visible";
+    }
+}
 
+function openProductBox() {
+    var pcheckboxdiv = document.getElementById("pcheckboxdiv");
+    pcheckboxdiv.classList.toggle("invisible");
+}
 
 
 
