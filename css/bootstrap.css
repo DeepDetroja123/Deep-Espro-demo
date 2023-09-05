@@ -2683,7 +2683,10 @@ textarea.form-control-lg {
   background-color: var(--bg-radio-6);
 }
 .form-check-input[type=checkbox] {
-  border-radius: 0.25em;
+  border: 1px solid grey;
+  color: white;
+  border-radius: 2px;
+  margin-right: 12px;
 }
 
 .form-check-input[type=radio] {
@@ -2696,6 +2699,12 @@ textarea.form-control-lg {
 .form-check-input:checked[type=radio] {
   outline: 1px solid #221F20;
   outline-offset: 2px;
+}
+.form-check-input:checked[type=checkbox] {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
+  background-color: #659AB1;
+  border-radius: 2px;
+  outline: none;
 }
 .form-check-input:disabled {
   pointer-events: none;
@@ -3914,7 +3923,7 @@ fieldset:disabled .btn {
 
 .btn-light-sm {
   padding: 18px 33px 12px 33px;
-  /* background-color: white; */
+  background-color: var(--bg-dark-cyan);
   border: none;
   opacity: 0.70;
 }
@@ -3923,6 +3932,9 @@ fieldset:disabled .btn {
   color: #000;
   background-color: transparent;
   border-color: #f9fafb;
+}
+.btn-light-sm:hover {
+  background-color: var(--white);
 }
 
 .btn-outline-light-sm {
@@ -5479,16 +5491,6 @@ fieldset:disabled .btn {
 }
 
 .badge {
-  /*
-  padding: 0.35em 0.65em;
-  font-size: 0.75em;
-  font-weight: 700;
-  line-height: 1;
-  color: #fff;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: baseline;
-  border-radius: 0.25rem; */
   display: inline-block;
   font-family: var(--font-family-nunito);
   font-weight: 500;
@@ -5499,6 +5501,86 @@ fieldset:disabled .btn {
   rotate: -90deg;
   letter-spacing: 2px;
   line-height: 1.90;
+}
+#collection1-po-2.form-check-input,
+#collection1-p1-4.form-check-input,
+#collection1-p7-2.form-check-input,
+#collection-po-2.form-check-input,
+#collection-p1-4.form-check-input,
+#collection-p7-2.form-check-input,
+#color-Radio-2.form-check-input,
+#homePagepocopy-2.form-check-input,
+#homePagepo-2.form-check-input,
+#homePagep7-2.form-check-input
+{
+  background-color: #FFFFFF;
+  border: 1px solid #DEDEDE;
+}
+#collection1-po-1.form-check-input,
+#collection1-p1-1.form-check-input,
+#collection1-p6-2.form-check-input,
+#collection1-p7-3.form-check-input,
+#collection1-p7-1.form-check-input,
+#collection-po-1.form-check-input,
+#collection-p1-1.form-check-input,
+#collection-p6-2.form-check-input,
+#collection-p7-3.form-check-input,
+#collection-p7-1.form-check-input,
+#color-Radio-8.form-check-input,
+#color-Radio-3.form-check-input,
+#color-Radio-1.form-check-input,
+#homePagepocopy-1.form-check-input,
+#homePagepo-1.form-check-input,
+#homePagep6-2.form-check-input,
+#homePagep7-3.form-check-input,
+#homePagep7-1.form-check-input{
+  background-color: var( --bg-radio-1);
+}
+#collection1-p1-2.form-check-input,
+#collection1-p6-1.form-check-input,
+#collection1-p7-4.form-check-input,
+#collection-p1-2.form-check-input,
+#collection-p6-1.form-check-input,
+#collection-p7-4.form-check-input,
+#color-Radio-9.form-check-input,
+#color-Radio-7.form-check-input,
+#color-Radio-4.form-check-input,
+#homePagep7-4.form-check-input,
+#homePagep6-1.form-check-input{
+  background-color: #221F20;
+}
+#collection1-po-3.form-check-input,
+#collection1-p1-3.form-check-input,
+#collection-po-3.form-check-input,
+#collection-p1-3.form-check-input,
+#homePagepocopy-3.form-check-input,
+#homePagepo-3.form-check-input,
+#flexRadioDefault9.form-check-input{
+  background-color: #676B6D;
+}
+#color-Radio-5.form-check-input{
+  background-color:#266657 ;
+}
+#collection1-po-4.form-check-input,
+#collection-po-4.form-check-input,
+#homePagepocopy-4.form-check-input,
+#homePagepo-4.form-check-input,
+#flexRadioDefault10.form-check-input{
+  background-color: #000000;
+}
+#collection1-po-5.form-check-input,
+#collection-po-5.form-check-input,
+#homePagepo-5.form-check-input,
+#flexRadioDefault11.form-check-input{
+  background-color: #285C4D;
+}
+#collection1-po-6.form-check-input,
+#collection-po-6.form-check-input,
+#color-Radio-6.form-check-input,
+#homePagepo-6.form-check-input,
+#flexRadioDefault34.form-check-input,
+#flexRadioDefault12.form-check-input{
+  background-color: #02205C;
 }
 
 .bg-badge-naviblue {

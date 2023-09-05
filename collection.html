@@ -43,64 +43,73 @@
         </div>
     </section>
 
-
-    <section class="container">
-        <div class="col-12 pt-4 filter">
-            <div class="border border-dark filter d-flex text-center justify-content-center align-items-center">
-                Filter
+    <section class="my-3">
+        <div class="d-block container w-100 mobile_filter " onclick="brandCollection()">
+            <div class="row filter-row mx-1 py-2 d-flex border border-dark">
+                <div class="col-4  text-start invisible" id="close-icon-filter">
+                    <a href="#"><span class="icon-esproclose text-white" onclick="brandCollectionClose()"></span></a>
+                </div>
+                <div class="col-4 text-center d-flex justify-content-center">
+                    <span class="icon-esprofilter me-2" id="filter-Icon"></span>
+                    <p class="fw-semibold d-flex align-items-center text-center" id="filter-menu">
+                        Filter</p>
+                </div>
+                <div class="col-4 text-end invisible" id="clear-option">
+                    <span class="fw-bold" id="clearfilter">clear all</span>
+                </div>
             </div>
         </div>
     </section>
-    <section class="container CollectionPageItem mb-5 pt-5">
+    <section class="container pt-sm-5 mt-sm-3 CollectionPageItem mb-5">
         <div class="pt-sm-3 d-flex flex-wrap flex-sm-nowrap">
-            <div class="col-lg-3 col-sm-4 col-12 product-price">
-                <span class="fw-bold text-dark product-result">
+
+            <div class="col-lg-3 col-sm-4 d-none col-12 pe-4" id="desktop-display">
+                <span class="fw-bold text-dark" id="resultData">
                     53 Results found
                 </span>
-                <div onclick="openBox()" class="col-12 pt-5">
-                    <div class="product-type border border-dark" id="avalibity">
-                        <div class="title-type position-relative ">
-                            <p class="fw-bold my-0">AVAILABILITY</p>
-                            <div class="position-absolute invisible top-0 end-0 pe-2" id="plussign">
-                                <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+
+                <div class="mt-2 border border-dark" id="producttype">
+                    <div class="product-type" id="VarietyOfProduct">
+                        <a href="JavaScript:void(0);">
+                            <div class="title-type position-relative" onclick="openAvailabilityBox()">
+                                <p class="fw-bold my-0">AVAILABILITY</p>
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="AvailabilityPlus">
+                                    <img src="./images/plus.svg" alt="#">
+                                </div>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="AvailabilityMinus">
+                                    <img src="./images/minus.svg" alt="#">
+                                </div>
                             </div>
-                            <div class="position-absolute visible top-0  end-0 pe-2" id="minussign">
-                                <a href="#"><img src="./images/minus.svg" alt="#" style="font-size: 12px;"></a>
+                        </a>
+                        <div class="pt-2 checkboxdiv d-block">
+                            <div class="form-check mb-2">
+                                <input class="form-check-input" type="checkbox" id="check1" name="option1"
+                                    value="something">
+                                <label class="form-check-label">In stock </label>
                             </div>
-                        </div>
-                        <div class="checkboxdiv">
-                            <div class="form-check pt-1">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDisabled"
-                                    disabled>
-                                <label class="form-check-label" for="flexCheckDisabled">
-                                    In stock
-                                </label>
-                            </div>
-                            <div class="form-check pt-2">
-                                <input class="form-check-input me-2" type="checkbox" value="" id="flexCheckDisabled"
-                                    disabled>
-                                <label class="form-check-label" for="flexCheckDisabled">
-                                    Out of stock
-                                </label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="check2" name="option2"
+                                    value="something">
+                                <label class="form-check-label">Out of stock</label>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="mt-3">
-                    <div class="product-type position-relative  border border-dark" id="producttype">
-                        <div class="title-type position-relative" onclick="openProductBox()">
-                            <a href="JavaScript:void(0);">
-                                <p class="fw-bold my-0">PRODUCT TYPE</p>
-                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign-p">
-                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
-                                </div>
-                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign-p">
-                                    <a href="#"><span class="icon-esprominus"></span></a>
-                                </div>
-                            </a>
 
-                        </div>
-                        <div class="checkboxdiv position-absolute invisible" id="pcheckboxdiv">
+                </div>
+                <div class="mt-2 border border-dark" id="producttype">
+                    <div class="product-type">
+                        <a href="JavaScript:void(0);">
+                            <div class="title-type position-relative" onclick="openProductBox()">
+                                <p class="fw-bold my-0">PRODUCT TYPE</p>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="ProductPlus">
+                                    <img src="./images/plus.svg" alt="#">
+                                </div>
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="ProductMinus">
+                                    <img src="./images/minus.svg" alt="#">
+                                </div>
+                            </div>
+                        </a>
+                        <div class="pt-2 checkboxdiv d-none" id="pcheckboxdiv">
                             <div class="form-check mb-2">
                                 <input class="form-check-input" type="checkbox" id="check3" name="option3"
                                     value="something">
@@ -118,87 +127,80 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div class="mt-3">
                     <div class="product-type border border-dark" id="avalibity">
                         <div class="title-type position-relative">
                             <a href="JavaScript:void(0);">
                                 <p class="fw-bold my-0">BRAND</p>
-                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign">
-                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                                <div class="position-absolute visible top-0 end-0 pe-2" id="BrandPlus">
+                                    <img src="./images/plus.svg" alt="#">
                                 </div>
-                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign">
+                                <div class="position-absolute invisible top-0 end-0 pe-2" id="BrandMinus">
                                     <img src="./images/minus.svg" alt="#">
                                 </div>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="mt-3">
-                    <div class="product-type position-relative  border border-dark" id="color">
-                        <div class="title-type position-relative" onclick="openColor()">
-                            <a href="JavaScript:void(0);">
-                                <p class="fw-bold my-0">COLOR</p>
-                                <div class="position-absolute visible top-0 end-0 pe-2" id="plussign-c">
-                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                <div class="mt-2 " id="Productcolor">
+                    <div class="product-type border border-dark">
+                        <a href="JavaScript:void(0);">
+                            <div class="title-type position-relative" onclick="openColor()">
+                                <a href="JavaScript:void(0);">
+                                    <p class="fw-bold my-0">COLOR</p>
+                                    <div class="position-absolute visible top-0 end-0 pe-2" id="ColorPlus">
+                                        <img src="./images/plus.svg" alt="#">
+                                    </div>
+                                    <div class="position-absolute invisible top-0 end-0 pe-2" id="ColorMinus">
+                                        <img src="./images/minus.svg" alt="#">
+                                    </div>
+                            </div>
+                        </a>
+                        <div class="pt-2 RadioButtondiv d-none">
+                            <div class="d-flex flex-row flex-wrap flex-grow-1">
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-1"
+                                        checked>
+                                    <label class="form-check-label" for="color-Radio-1"></label>
                                 </div>
-                                <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign-c">
-                                    <img src="./images/minus.svg" alt="#">
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-2">
+                                    <label class="form-check-label" for="color-Radio-2"></label>
                                 </div>
-                            </a>
-                        </div>
-                        <div class="pt-2 mt-1 RadioButtondiv invisible position-absolute">
-                            <div class="d-flex flex-row flex-wrap flex-grow-1 me-4">
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault1" checked>
-                                    <label class="form-check-label" for="flexRadioDefault1"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-3">
+                                    <label class="form-check-label" for="color-Radio-3"></label>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault2">
-                                    <label class="form-check-label" for="flexRadioDefault2"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-4">
+                                    <label class="form-check-label" for="color-Radio-4"></label>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault3">
-                                    <label class="form-check-label" for="flexRadioDefault3"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-5">
+                                    <label class="form-check-label" for="color-Radio-5"></label>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault"
-                                        id="flexRadioDefault4">
-                                    <label class="form-check-label" for="flexRadioDefault4"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-6">
+                                    <label class="form-check-label" for="color-Radio-6"></label>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                        id="flexRadioDefault5">
-                                    <label class="form-check-label" for="flexRadioDefault5"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-7">
+                                    <label class="form-check-label" for="color-Radio-7"></label>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault1"
-                                        id="flexRadioDefault6">
-                                    <label class="form-check-label" for="flexRadioDefault6"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-8">
+                                    <label class="form-check-label" for="color-Radio-8"></label>
                                 </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
-                                        id="flexRadioDefault7">
-                                    <label class="form-check-label" for="flexRadioDefault7"></label>
-                                </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
-                                        id="flexRadioDefault8">
-                                    <label class="form-check-label" for="flexRadioDefault8"></label>
-                                </div>
-                                <div class="form-check me-2">
-                                    <input class="form-check-input" type="radio" name="flexRadioDefault2"
-                                        id="flexRadioDefault9">
-                                    <label class="form-check-label" for="flexRadioDefault9"></label>
+                                <div class="form-check mx-2">
+                                    <input class="form-check-input" type="radio" name="colorradio" id="color-Radio-9">
+                                    <label class="form-check-label" for="color-Radio-9"></label>
                                 </div>
                             </div>
-
-
                         </div>
                     </div>
+
                 </div>
                 <div class="mt-3">
                     <div class="product-type border border-dark" id="size">
@@ -206,7 +208,7 @@
                             <a href="JavaScript:void(0);">
                                 <p class="fw-bold my-0">SIZE</p>
                                 <div class="position-absolute visible top-0 end-0 pe-2" id="plussign">
-                                    <a href="#"><span class="icon-esproplus" style="font-size: 12px;"></span></a>
+                                    <img src="./images/plus.svg" alt="#">
                                 </div>
                                 <div class="position-absolute invisible top-0 end-0 pe-2" id="minussign">
                                     <img src="./images/minus.svg" alt="#">
@@ -215,27 +217,42 @@
                         </div>
                     </div>
                 </div>
+                <!-- <div class="col-12 position-absolute bottom-0 left-0">
+                    <a href="" class="btn btn-lg">Apply Now</a>
+                </div> -->
             </div>
             <div class="col-lg-9 col-sm-8 col-12 collection-image">
                 <div class="row gy-6">
                     <div class="col-lg-4 col-sm-6">
                         <div class="w-100 px-0 pb-3 h-auto position-relative collectionProduct">
                             <div class="product-slide">
-                                <div class="image-product bg-product py-4 px-4 my-1">
-                                    <span class="badge mb-2 position-absolute"> SALE </span>
-                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
+                                <div class="image-product bg-product px-4 py-4 my-1">
+                                    <a href="#"><img src="./images/product-slide-1.png" alt="product-slide"
+                                            class="w-100 h-100" /></a>
                                 </div>
-                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
-                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
-                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                <div class="text-overlay">
+                                    <p class="pt-2 pb-1 px-3">ESPRO COFFEE FRENCH PRESS P7</p>
+                                    <p class="price pt-4">$109.95 - $139.95</p>
+                                </div>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group">
                                     <div class="form-check">
-                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
-                                                id="customRadio4" checked /></a>
+                                        <a href="#"> <input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio1" checked /></a>
+                                        <label class="form-check" for="customRadio1"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio2" />
+                                            <label class="form-check" for="customRadio2"></label></a>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio" id="customRadio1"
+                                                class="form-check-input" /></a>
                                         <label class="form-check" for="customRadio3"></label>
                                     </div>
                                     <div class="form-check">
-                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
-                                                id="customRadio1" /></a>
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio4" /></a>
                                         <label class="form-check" for="customRadio4"></label>
                                     </div>
                                 </div>
@@ -244,18 +261,27 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
+                        <div class="w-100 px-0 pb-3 h-auto position-relative collectionProduct">
                             <div class="product-slide">
                                 <div class="image-product bg-product py-4 px-4 my-1">
-                                    <span class="badge bg-badge-naviblue position-absolute">
-                                        NEW!
-                                    </span>
-                                    <img src="./images/product-slide-3.png" alt="product-slide" class="w-100 h-100" />
+                                    <span class="badge mb-2 position-absolute"> SALE </span>
+                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
                                 </div>
-                                <p class="pt-2 px-3">
-                                    BLOOM POUR OVER COFFEE BREWING KIT, 18 OZ
-                                </p>
-                                <p class="price">$99.95</p>
+
+                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio4" checked /></a>
+                                        <label class="form-check" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio1" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -277,10 +303,9 @@
                                         <label class="form-check" for="customRadio1"></label>
                                     </div>
                                     <div class="form-check">
-                                        <a href=""><input type="radio" name="customRadio"
-                                                class="form-check-input"  id="customRadio2"/>
-                                            <label class="form-check"
-                                                for="customRadio2"></label></a>
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio2" />
+                                            <label class="form-check" for="customRadio2"></label></a>
                                     </div>
                                     <div class="form-check">
                                         <a href=""><input type="radio" name="customRadio" id="customRadio1"
@@ -297,33 +322,25 @@
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-6 pt-4">
-                        <div class="w-100 px-0 pb-3 position-relative collectionProduct">
-
+                        <div class="w-100 px-0 pb-3 h-auto position-relative collectionProduct">
                             <div class="product-slide">
-                                <div class="col-lg-4 col-sm-6">
-                                    <div class="w-100 px-0 pb-3 h-auto position-relative collectionProduct">
-                                        <div class="product-slide">
-                                            <div class="image-product bg-product py-4 px-4 my-1">
-                                                <span class="badge mb-2 position-absolute"> SALE </span>
-                                                <img src="./images/product-slide-2.png" alt="product-slide"
-                                                    class="w-100 h-100" />
-                                            </div>
-                                            <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
-                                            <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
-                                            <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
-                                                <div class="form-check">
-                                                    <a href="#"><input type="radio" name="customRadio2"
-                                                            class="form-check-input" id="customRadio4" checked /></a>
-                                                    <label class="form-check" for="customRadio3"></label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <a href="#"><input type="radio" name="customRadio2"
-                                                            class="form-check-input" id="customRadio1" /></a>
-                                                    <label class="form-check" for="customRadio4"></label>
-                                                </div>
-                                            </div>
-                                        </div>
+                                <div class="image-product bg-product py-4 px-4 my-1">
+                                    <span class="badge mb-2 position-absolute"> SALE </span>
+                                    <img src="./images/product-slide-2.png" alt="product-slide" class="w-100 h-100" />
+                                </div>
 
+                                <p class="pt-2 pb-2 px-3">ESPRO COFFEE FRENCH PRESS P6</p>
+                                <p class="price pt-4">$89.95 <span class="remove-price">$99.95</span></p>
+                                <div class="px-3 pt-2 pb-3 ml d-flex flex-row" id="radio-group-1">
+                                    <div class="form-check">
+                                        <a href="#"><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio4" checked /></a>
+                                        <label class="form-check" for="customRadio3"></label>
+                                    </div>
+                                    <div class="form-check">
+                                        <a href=""><input type="radio" name="customRadio2" class="form-check-input"
+                                                id="customRadio1" /></a>
+                                        <label class="form-check" for="customRadio4"></label>
                                     </div>
                                 </div>
                             </div>
@@ -395,10 +412,9 @@
                                         <label class="form-check" for="customRadio1"></label>
                                     </div>
                                     <div class="form-check">
-                                        <a href=""><input type="radio" name="customRadio"
-                                                class="form-check-input"  id="customRadio2"/>
-                                            <label class="form-check"
-                                                for="customRadio2"></label></a>
+                                        <a href=""><input type="radio" name="customRadio" class="form-check-input"
+                                                id="customRadio2" />
+                                            <label class="form-check" for="customRadio2"></label></a>
                                     </div>
                                     <div class="form-check">
                                         <a href=""><input type="radio" name="customRadio" id="customRadio1"
@@ -627,7 +643,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
 

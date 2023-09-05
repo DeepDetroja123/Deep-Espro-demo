@@ -278,16 +278,12 @@
     left: -12px;
 }
 
-.product-slide {
+.swiper-slide .product-slide {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     transition: box-shadow 0.3s ease;
     width: 310px;
-}
-.collection-image .product-slide{
-    width: 310px;
-    margin: 0 auto;
 }
 
 .image-product {
@@ -543,8 +539,8 @@
 .flowerLogo {
     max-height: 109px;
     max-width: 109px;
-    top: -73px;
-    right: -19px;
+    top: -70px;
+    right: -44px;
 }
 
 .coffee-detail:first-child {
@@ -575,7 +571,6 @@
     letter-spacing: 0;
     line-height: 1.67;
 }
-
 .contactFooterSectionPart-1 p {
     font-size: 16px;
     letter-spacing: 0;
@@ -653,7 +648,7 @@
     background-size: 20px;
 }
 #closeButton {
-    top: -332px;
+    top: -51px;
     right: -24px;
 }
 #iframe_video {
@@ -663,7 +658,34 @@
     width: 100%;
     opacity: 9999999;
 }
+#producttype .checkboxdiv{
+    z-index: 3;
+    background: white;
+    left: -1px;
+    padding: 0px 12px 14px;
+    border-top: none;
+    width: calc(100% - 5px);
+    top: 45px;
+}
+.mobile_filter span#clearfilter,
+.checkboxdiv label{
+    color: #221F20;
+    font-size: 12px;
+    font-family: var(--font-family-josefin) !important;
+    font-weight: normal;
+    line-height:1;
+    letter-spacing: 0;
+}
+.mobile_filter span#filter-menu{
+    color:#221F20 ;
+    font-size: 14px;
+    font-family: var(--font-family-nunito) !important;
+    letter-spacing: 0;
 
+}
+#videoModal{
+    background-color: var(--bg-ziggurat);
+}
 
 @keyframes marquee {
     0% {
@@ -690,6 +712,12 @@
 }
 
 @media (min-width: 576px) {
+    #desktop-display.d-none{
+        display: block !important;
+    }
+    .mobile_filter.d-block{
+        display: none !important;
+    }
     .banner {
         min-height: 83vw;
     }
@@ -847,7 +875,7 @@
         min-height: 35.08vw;
     }
 
-    .product-slide {
+    .swiper-slide .product-slide {
         width: 295px;
     }
 
@@ -975,8 +1003,8 @@
     .flowerLogo {
         max-height: 145px;
         max-width: 145px;
-        top: -73px;
-        right: -45px;
+        top: -91px;
+        right: -58px;
     }
 
     .blog-sec .blog-sec-details .Image-3.d-block {
@@ -1047,8 +1075,12 @@
     .product-price{
         padding-right: 25px;
     }
+    .pro-detail{
+        max-width: 480px;
+    }
    
 }
+
 
 @keyframes slideInFromLeft {
     0% {
@@ -1060,9 +1092,9 @@
     }
 }
 
-header {
+/* header {
     animation: 1s ease-out 0s 1 slideInFromLeft;
-}
+} */
 
 /* .badge {
     animation: wiggle 2s linear infinite;
