@@ -3926,6 +3926,13 @@ fieldset:disabled .btn {
   background-color: var(--white);
   transform: scale(0.935,0.94) !important;
 }
+.insta-btn .btn-light{
+  padding: 12px 37px 12px 35px;
+}
+.insta-btn .btn-light::before{
+  border: 1px solid var(--black) !important;
+  background-color: transparent;
+}
 .btn-pad{
   padding: 25px 22px 22px 25px;
 }

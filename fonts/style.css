@@ -70,6 +70,7 @@
 }
 .icon-espronav:before {
   content: "\e905";
+  font-size: 24px;
 }
 .icon-esproplay:before {
   content: "\e906";
