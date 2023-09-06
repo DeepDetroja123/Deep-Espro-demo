@@ -83,7 +83,16 @@
     scroll-behavior: smooth;
   }
 }
-
+.font-family-nunito{
+  font-family: var(--font-family-nunito);
+}
+.m-0{
+  margin: 0;
+}
+.span-font{
+  font-size: 14px;
+  font-family: var(--font-family-nunito);
+}
 body {
   margin: 0;
   font-family: var(--bs-font-sans-serif);
@@ -8338,7 +8347,9 @@ ul li a{
 .pt-2 {
   padding-top: 0.5rem !important;
 }
-
+.pt-n10{
+  padding-top: -10px !important;
+}
 .pt-3 {
   padding-top: 1rem !important;
 }
@@ -8641,6 +8652,9 @@ ul li a{
 }
 .bg-product{
   background-color: var(--bg-input-color);
+}
+.bg-primary-black-900{
+  background-color: var(--bg-primary-black-900);
 }
 .bg-rock-blue {
   background-color: var(--bg-rock-blue);
