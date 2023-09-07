@@ -1131,6 +1131,14 @@
         transform: translateX(0);
     }
 }
+@media (min-width:1400px){
+    .icon-outside .swiper-button-prev{
+        left: -40px;    
+    }
+    .icon-outside .swiper-button-next{
+        right: -40px;
+    }
+}
 
 /* header {
     animation: 1s ease-out 0s 1 slideInFromLeft;

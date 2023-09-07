@@ -55,7 +55,7 @@ var swiper = new Swiper('.mySwiper', {
 var swiper = new Swiper(".ImageSwiper", {
     slidesPerView: "auto",
     spaceBetween: 30,
-    loop: true,
+    // loop: true,
     grid: {
         rows: 2,
     },
@@ -75,7 +75,7 @@ var swiper = new Swiper(".ImageSwiper", {
             grid: {
                 rows: 1,
             },
-        }
+        },
     },
 });
 

@@ -49,9 +49,11 @@
 }
 .icon-esprodown-arrow:before {
   content: "\e90a";
+  
 }
 .icon-esprodrop-down:before {
   content: "\e909";
+  color: grey;
 }
 .icon-esproaccount:before {
   content: "\e900";
